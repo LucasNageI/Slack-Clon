@@ -1,0 +1,40 @@
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 50px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 50px;
+}
+
+.slack-icon {
+    width: 54px;
+}
+
+.footer-list {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.list-titles {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.list-item {
+    text-decoration: none;
+    color: #757575;
+}
+
+.list-item:hover {
+    color: #58b6e4;
+}
+
+.list-items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 175px;
+}

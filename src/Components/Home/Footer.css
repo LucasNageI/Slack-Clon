@@ -1,0 +1,74 @@
+.footer {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.region-and-media-container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    height: 10vh;
+}
+
+.region-btn-container {
+    margin: 100px 0px;
+}
+
+.region-btn {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.social-media-container {
+    margin: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.social-media-item {
+    color: black;
+    font-size: 18px;
+}
+
+.social-media-item:hover {
+    color: #58b6e4;
+}
+
+.legal-section {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.legal-section-ul {
+    display: flex;
+    gap: 10px;
+
+}
+
+.download-slack {
+    text-decoration: none;
+    color: #1674b7;
+}
+
+.legal-section-links {
+    text-decoration: none;
+    color: #757575;
+    color: #757575;
+    font-size: 14px;
+}
+
+.p-copyright {
+    color: #757575;
+    font-size: 14px;
+}
+
+.span-copyright {
+    color: #757575;
+    font-size: 14px;
+}
