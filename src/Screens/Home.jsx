@@ -12,7 +12,7 @@ export const Home = () => {
     <header className='header'>
         <nav className='nav'>
             <ul className='nav-list'>
-                <li><img className='slack-icon' src='https://a.slack-edge.com/3d92b39/marketing/img/nav/slack-salesforce-logo-nav-white.png' alt='slack icon'/></li>
+                <li><img src='https://a.slack-edge.com/3d92b39/marketing/img/nav/slack-salesforce-logo-nav-white.png' alt='slack icon'/></li>
                 <li><button className='btn'>Features</button></li>
                 <li><button className='btn'>Solutions</button></li>
                 <li><button className='btn'>Enterprise</button></li>
@@ -22,7 +22,7 @@ export const Home = () => {
             <ul className='btn-list'>
                 <li className='search'><button className='btn'><i className="bi bi-search"></i></button></li>
                 <li><button className='talk-to-sales'>TALK TO SALES</button></li>
-                <li><button className='create-workspace'>CREATE A NEW WORKSPACE</button></li>
+                <li><button className='create-workspace-btn'>CREATE A NEW WORKSPACE</button></li>
             </ul>
         </nav>
     </header>
@@ -39,10 +39,43 @@ export const Home = () => {
                 </div>
                 <div className='workspaces-list'>
                     <Workspaces workspace={local_mook.workspaces}/>
+                    <div className='create-new-workspace'>
+                        <div className='img-info-container'>
+                            <div className='workspace-img-container'>
+                                <img className='workspace-img' src={"/slack-icon.png"} alt="workspace image" />
+                            </div> 
+                            <div className='info-workspace-container'>
+                                <h2 className='workspace-title'>New Workspace</h2>
+                                <span>Not created</span>
+                            </div>
+                        </div>
+
+                        <div className='launch-slack-container'>
+                            <button className='launch-slack-btn'>LAUNCH SLACK</button>
+                        </div>
+
+                        </div>
                 </div> 
+
             </div>
         </div>
+            <div className='create-a-new-workspace-container'>
+                <div className='woman-with-laptop-container'>
+                    <img className='woman-with-laptop' src="/woman-with-laptop-color-background.png" alt="woman with laptop" />
+                </div>
+                <div className='span-btn-container'>
+                    <span className='want-to-switch-team-span'>Want to use Slack with a different team?</span>
+                    <button className='create-workspace-btn'>CREATE A NEW WORKSPACE</button>
+                </div>
+            </div>
+            <div className='change-account-container'>
+                <span className='change-email-span'>Not seeing your workspace? <a className='change-email-link' href="">Try using a different email <i className="bi bi-arrow-right-short"></i></a></span>
+            </div>
+
     </main>
+    <footer>
+        {/* si sobra tiempo, hacer este footer */}
+    </footer>
     </>
   )
 }

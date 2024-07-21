@@ -14,8 +14,8 @@ export const Workspaces = ({workspace}) => {
                     <span>Creation date: {workspace.creation_date}</span>
                 </div>
             </div>
-            <div className='open-slack-container'>
-                <button className='open-slack-btn'>LAUNCH SLACK</button>
+            <div className='launch-slack-container'>
+                <button className='launch-slack-btn'>LAUNCH SLACK</button>
             </div>
         </div>
         )

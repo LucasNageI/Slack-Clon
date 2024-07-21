@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: space-between;
     height: 120px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #eaeaea;
+    padding: 20px;
 }
 
 .img-info-container{
@@ -20,11 +21,15 @@
     border: 2px solid black;
 }
 
-.open-slack-btn {
+.launch-slack-btn {
     color: white;
     font-weight: 800;
     border-radius: 5px;
-    height: 40px;
-    width: 120px;
+    padding: 18px;
     background-color: #611f69;
+    transition: all 0.5s ease;
+}
+
+.launch-slack-btn:hover {
+    background-origin: #4f1852;
 }
