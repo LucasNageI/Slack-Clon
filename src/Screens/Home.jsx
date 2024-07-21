@@ -20,7 +20,7 @@ export const Home = () => {
                 <li><button className='btn'>Pricing</button></li>
             </ul>
             <ul className='btn-list'>
-                <li className='search'><button className='btn'><i class="bi bi-search"></i></button></li>
+                <li className='search'><button className='btn'><i className="bi bi-search"></i></button></li>
                 <li><button className='talk-to-sales'>TALK TO SALES</button></li>
                 <li><button className='create-workspace'>CREATE A NEW WORKSPACE</button></li>
             </ul>

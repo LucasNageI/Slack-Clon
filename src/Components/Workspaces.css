@@ -1,5 +1,30 @@
-.workspace-img-container {
-    height: 80px;
-    width: 80px;
+.workspace {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    border-bottom: 1px solid black;
+}
+
+.img-info-container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.workspace-img {
+    display: flex;
+    width: 100px;
+    height: 100px;
     border-radius: 10px;
+    border: 2px solid black;
+}
+
+.open-slack-btn {
+    color: white;
+    font-weight: 800;
+    border-radius: 5px;
+    height: 40px;
+    width: 120px;
+    background-color: #611f69;
 }
