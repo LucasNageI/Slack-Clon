@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Workspaces.css"
 import { Link } from 'react-router-dom'
+import { FormWorkspace } from '../CreateWorkspace/FormWorkspace.jsx'
 
 export const Workspaces = ({ workspace }) => {
     const workspaces_array = workspace.map((workspace) => {
