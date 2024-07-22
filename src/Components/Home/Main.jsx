@@ -1,8 +1,10 @@
 import React from 'react'
 import "./Main.css"
 import { Workspaces } from './Workspaces'
+import { Link } from 'react-router-dom'
 
 const local_mook = JSON.parse(localStorage.getItem("MOOK"))
+
 
 
 export const Main = () => {
@@ -30,7 +32,7 @@ export const Main = () => {
                                 </div>
                             </div>
                             <div className='launch-slack-container'>
-                                <button className='launch-slack-btn'>LAUNCH SLACK</button>
+                                <Link to={"/CreateWorkspace"} className='launch-slack-btn'>LAUNCH SLACK</Link>
                             </div>
                         </div>
                     </div>
@@ -42,7 +44,7 @@ export const Main = () => {
                 </div>
                 <div className='span-btn-container'>
                     <span className='want-to-switch-team-span'>Want to use Slack with a different team?</span>
-                    <button className='create-workspace-btn'>CREATE A NEW WORKSPACE</button>
+                    <Link to={"/CreateWorkspace"} className='create-workspace-btn'>CREATE A NEW WORKSPACE</Link>
                 </div>
             </div>
             <div className='change-account-container'>

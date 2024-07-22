@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Header.css"
+import { Link } from 'react-router-dom'
 
 export const Header = () => {
     return (
@@ -16,7 +17,7 @@ export const Header = () => {
                 <ul className='btn-list'>
                     <li className='search'><button className='btn'><i className="bi bi-search"></i></button></li>
                     <li><button className='talk-to-sales'>TALK TO SALES</button></li>
-                    <li><button className='create-workspace-btn'>CREATE A NEW WORKSPACE</button></li>
+                    <li><Link to={"/CreateWorkspace"} className='create-workspace-btn'>CREATE A NEW WORKSPACE</Link></li>
                 </ul>
             </nav>
         </header>

@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Workspaces.css"
+import { Link } from 'react-router-dom'
 
 export const Workspaces = ({ workspace }) => {
     const workspaces_array = workspace.map((workspace) => {
@@ -15,7 +16,7 @@ export const Workspaces = ({ workspace }) => {
                     </div>
                 </div>
                 <div className='launch-slack-container'>
-                    <button className='launch-slack-btn'>LAUNCH SLACK</button>
+                <Link to={"/Workspace" + workspace.id} className='launch-slack-btn'>LAUNCH SLACK</Link>
                 </div>
             </div>
         )

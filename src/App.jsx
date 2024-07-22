@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { Home } from './Screens/Home'
+import { CreateWorkspace } from './Screens/CreateWorkspace'
 
 const MOOK = {
     "user_info": {
@@ -63,7 +64,8 @@ function App() {
   return (
     <Routes>
         <Route element={<Home/>} path='/'></Route>
-        <Route element={<Home/>} path='/Screens/Home'></Route>
+        <Route element={<Home/>} path='/Home'></Route>
+        <Route element={<CreateWorkspace/>} path='/CreateWorkspace'></Route>
     </Routes>
   )
 }
