@@ -21,15 +21,7 @@
     border: 2px solid black;
 }
 
-.launch-slack-btn {
-    text-decoration: none;
-    color: white;
-    font-weight: 800;
-    border-radius: 5px;
-    padding: 18px;
-    background-color: #611f69;
-    transition: all 0.5s ease;
-}
+
 
 .launch-slack-btn:hover {
     background-origin: #4f1852;

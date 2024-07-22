@@ -1,5 +1,4 @@
 .main {
-    height: 90vh;
     background-color: #49144a;
     display: flex;
     flex-direction: column;
@@ -8,6 +7,7 @@
 }
 
 .welcome-back-container {
+    margin-top: 30px;
     color: white;
     width: 1200px;
     display: flex;
@@ -20,6 +20,7 @@
 }
 
 .main-child {
+    margin: 60px;
     width: 1200px;
     border-radius: 10px;
 }
@@ -61,6 +62,16 @@
     border: 2px solid black;
 }
 
+.launch-slack-btn {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    border-radius: 5px;
+    padding: 18px;
+    background-color: #611f69;
+    transition: all 0.5s ease;
+}
+
 .launch-slack-btn:hover {
     background-color: #49144a;
 }
@@ -72,6 +83,7 @@
     border: 4px solid #6d446d;
     height: 97px;
     display: flex;
+    margin: 40px;
 }
 
 .span-btn-container {
@@ -79,8 +91,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin: 20px;
 }
 
 .want-to-switch-team-span {
@@ -88,9 +99,14 @@
     font-weight: 800;
 }
 
+.change-account-container {
+    margin-bottom: 50px;
+}
+
 .change-email-span {
     color: white;
     font-size: 18px;
+    padding-bottom: 20px;
 }
 
 .change-email-link {
@@ -109,5 +125,23 @@
 
 
 @media (max-width: 1250px) {
+    .create-a-new-workspace-container {
+        width: 1000px;
+        border-radius: 10px;
+        background-color: #fafafa;
+        border: 4px solid #6d446d;
+        height: 97px;
+        display: flex;
+    }
+    .main-child {
+        width: 1000px;
+        border-radius: 10px;
+    }
+    .welcome-back-container {
+        color: white;
+        width: 1000px;
+        display: flex;
+        align-items: center;
+    }
     
 }
