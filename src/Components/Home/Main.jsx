@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom'
 
 const local_mook = JSON.parse(localStorage.getItem("MOOK"))
 
-
-
 export const Main = () => {
     return (
         <main className='main'>

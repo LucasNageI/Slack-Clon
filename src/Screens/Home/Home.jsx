@@ -1,7 +1,6 @@
 import React from 'react'
-
 import "./Home.css"
-import { Header, Main, Footer } from "../Components/Home/index.js"
+import { Header, Main, Footer } from "/src/Components/Home/index.js"
 
 export const Home = () => {
     return (

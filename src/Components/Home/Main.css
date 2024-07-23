@@ -113,7 +113,7 @@
     font-size: 18px;
     text-decoration: none;
     border-bottom: 2px solid transparent;
-    transition: all 0.5 ease;
+    transition: all 0.5s ease;
 }
 
 .change-email-link:hover {
@@ -122,25 +122,14 @@
     border-bottom: 2px solid #58b6e4;
 }
 
-
 @media (max-width: 1250px) {
     .create-a-new-workspace-container {
         width: 1000px;
-        border-radius: 10px;
-        background-color: #fafafa;
-        border: 4px solid #6d446d;
-        height: 97px;
-        display: flex;
     }
     .main-child {
         width: 1000px;
-        border-radius: 10px;
     }
     .welcome-back-container {
-        color: white;
         width: 1000px;
-        display: flex;
-        align-items: center;
     }
-    
 }

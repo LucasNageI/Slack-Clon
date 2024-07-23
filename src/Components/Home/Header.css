@@ -15,9 +15,12 @@
 }
 
 .nav-list {
-    height: 50px;
     display: flex;
     align-items: center;
+}
+
+.list-container {
+    display: flex;
     gap: 25px;
 }
 
@@ -27,6 +30,21 @@
     font-weight: 800;
 }
 
+.btn:hover {
+    text-decoration: underline;
+}
+
+.open-ham-menu, .close-ham-menu {
+    display: none;
+}
+
+.navbar-btn {
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 30px;
+}
 
 .btn-list {
     height: 50px;
@@ -74,7 +92,12 @@
     .talk-to-sales {
         display: none;
     }
-
+    .open-ham-menu, .close-ham-menu {
+        display: flex;
+    }
+    .btn {
+        display: none;
+    }
 }
 
 @media (max-width: 1000px) {

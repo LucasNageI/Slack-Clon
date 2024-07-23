@@ -4,9 +4,27 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
 export const FormWorkspace = () => {
-
     const [errorWorkspace, setErrorWorkspace] = useState("")
     const [errorChannel, setErrorChannel] = useState("")
+
+    const local_mook = JSON.parse(localStorage.getItem("MOOK"))
+    const workspaces = local_mook.workspaces
+
+    const new_workspace = {
+        id: (workspaces).length + 1,
+        name: "",
+        creation_date: "22/07/24",
+        workspace_img: "",
+        chanels: [
+            {
+                id: 1,
+                name: "general",
+                messages: []
+            }
+        ]
+    }
+
+    console.log(new_workspace.id)
 
     const handleSubmit = (e) => {
         let workspace_name = e.target.workspace_name.value
@@ -20,12 +38,16 @@ export const FormWorkspace = () => {
             setErrorWorkspace("")
         }
 
-        if(channel_name.length >= 21 || channel_name.length <= 1){
-            setErrorChannel("Whannel name may have between 2 and 20 characters")
+        if(channel_name === ""){
+            setErrorChannel("")
+        }
+        else if(channel_name.length >= 21 || channel_name.length <= 1){
+            setErrorChannel("Channel name may have between 2 and 20 characters")
         }
         else{
             setErrorChannel("")
         }
+
     }
 
   return (
@@ -40,8 +62,8 @@ export const FormWorkspace = () => {
                         <span className='error-span' id='error_workspace_span'>{errorWorkspace}</span>
                     </div>
                     <div className='channel-name-container'>
-                        <label className='label' htmlFor="channel_name">Aditional channel name</label>
-                        <input className='channel-name' id='channel_name' name='channel-name' type="text" autoComplete='off' placeholder='Anounces'/>
+                        <label className='label' htmlFor="channel_name">Aditional channel name (optional)</label>
+                        <input className='channel-name' id='channel_name' name='channel-name' type="text" autoComplete='off' placeholder='#Anounces'/>
                         <span className='error-span' id='error_channel_span'>{errorChannel}</span>
                     </div>
                 </div>
