@@ -1,6 +1,6 @@
 .header {
     height: 10vh;
-    background-color: #49144a;
+    background-color: #22252a;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,8 +77,8 @@
     background-color: white;
     padding: 15px;
     border-radius: 5px;
-    border: 3px solid #49144a;
-    color: #49144a;
+    border: 3px solid #22252a;
+    color: #22252a;
     font-weight: 800;
     outline: 2px solid transparent;
     transition: all 0.5s ease;
@@ -86,8 +86,8 @@
 
 .create-workspace-btn:hover {
     border-radius: 2px;
-    outline: 2px solid #744477;
-    border: 3px solid #8b638f;
+    outline: 2px solid #414449;
+    border: 3px solid #535557;
 }
 
 .nav-list.closed .list-container {
