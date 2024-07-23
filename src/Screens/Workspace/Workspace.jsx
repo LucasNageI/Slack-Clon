@@ -1,11 +1,16 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import { Aside, Channels, Content, DirectMessages, Header } from '/home/lucas/Slack Clon/Slack/src/Components/Workspace/index.js'
 
 export const Workspace = () => {
     const { id } = useParams()
   return (
     <div>
-        <h1>workspace id: {id}</h1>
+        <Header />
+        <Aside id={id} />
+        <Channels />
+        <DirectMessages />
+        <Content />
     </div>
   )
 }

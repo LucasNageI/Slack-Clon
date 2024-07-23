@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Footer.css"
-import { Links } from './Links'
+import { Links } from "./Links/Links.jsx"
+
 
 export const Footer = () => {
     return (

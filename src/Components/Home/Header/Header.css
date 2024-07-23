@@ -4,6 +4,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    transition: background-color 0.3s ease;
 }
 
 .nav {
@@ -88,15 +90,64 @@
     border: 3px solid #8b638f;
 }
 
-@media (max-width: 1250px) {
-    .talk-to-sales {
+.nav-list.closed .list-container {
+    display: flex;
+}
+
+@media (max-width: 1350px) {
+
+    .nav {
+        margin: 0 20px;
+    }
+
+    .btn-list{
         display: none;
     }
+
+    .nav-ham-btn-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .create-workspace-btn {
+        display: none;
+    }
+
+    .nav-list.open .list-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav-list.open {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: #49144a;
+        z-index: 10;
+        padding: 20px;
+    }
+
+    .btn-container {
+        display: none;
+    }
+    .navbar-btn.open-ham-menu {
+        display: inline-block;
+    }
+
     .open-ham-menu, .close-ham-menu {
         display: flex;
     }
+    
     .btn {
         display: none;
+    }
+
+    .bi-x {
+        display: flex;
     }
 }
 

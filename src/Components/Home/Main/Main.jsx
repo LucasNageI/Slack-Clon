@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Main.css"
-import { Workspaces } from './Workspaces'
+import { Workspaces } from './Workspaces/Workspaces.jsx'
 import { Link } from 'react-router-dom'
 
 const local_mook = JSON.parse(localStorage.getItem("MOOK"))
@@ -30,7 +30,7 @@ export const Main = () => {
                                 </div>
                             </div>
                             <div className='launch-slack-container'>
-                                <Link to={"/CreateWorkspace"} className='launch-slack-btn'>LAUNCH SLACK</Link>
+                                <Link to={"/CreateWorkspace"} className='launch-slack-btn'>NEW WORKSPACE</Link>
                             </div>
                         </div>
                     </div>
