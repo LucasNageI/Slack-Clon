@@ -1,0 +1,20 @@
+.main-page {
+    display: flex;
+    flex-direction: column;
+    background-color: #202328;
+    height: 100vh;
+}
+
+.Aside-ChannelAndDMs-Content-container {
+    display: flex;
+    flex-direction: row;
+    width: 99vw;
+    background-color: #181b1e;
+}
+
+.channel-content-container {
+    display: flex;
+    border: 1px solid #3a3c41;
+    border-radius: 10px;
+    overflow: hidden;
+}

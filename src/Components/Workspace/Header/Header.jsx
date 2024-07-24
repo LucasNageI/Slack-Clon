@@ -13,7 +13,7 @@ export const Header = ({ id }) => {
             <button><i className="bi bi-clock"></i></button>
             <button className='workspace-search-btn'>
                 <span>Search {local_mook.workspaces[id - 1].name}</span>
-                <i class="bi bi-search"></i>
+                <i className="bi bi-search"></i>
             </button>
         </div>
         <div>

@@ -23,13 +23,15 @@
 
 .workspace-btn-container {
     position: relative;
-    left: 22vw;
+    left: 28vw;
     display: flex;
     gap: 10px;
 }
 
 .bi-arrow-left-short , .bi-arrow-right-short {
     font-size: 20px;
+    color: #787a7e;
+    cursor: default;
 }
 
 .bi-clock, .bi-search {
