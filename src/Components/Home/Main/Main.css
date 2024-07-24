@@ -67,12 +67,12 @@
     font-weight: 800;
     border-radius: 5px;
     padding: 18px;
-    background-color: #611f69;
+    background-color: #22252a;
     transition: all 0.5s ease;
 }
 
 .launch-slack-btn:hover {
-    background-color: #49144a;
+    background-color: #151618;
 }
 
 .create-a-new-workspace-container {
