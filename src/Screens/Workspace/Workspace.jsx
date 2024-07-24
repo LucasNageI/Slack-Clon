@@ -6,7 +6,7 @@ export const Workspace = () => {
     const { id } = useParams()
   return (
     <div>
-        <Header />
+        <Header id={id} />
         <Aside id={id} />
         <Channels />
         <DirectMessages />

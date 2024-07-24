@@ -14,31 +14,31 @@ export const Aside = ({id}) => {
                 </li>
                 <li className='aside-list-item'>
                     <button className='aside-btn-list home'>
-                        <i className="bi bi-house"></i>
+                        <i className="bi bi-house aside-btns"></i>
                     </button>
                     <span className='aside-span'>Home</span>
                 </li>
                 <li className='aside-list-item'>
                     <button className='aside-btn-list DMs'>
-                        <i className="bi bi-wechat"></i>
+                        <i className="bi bi-wechat aside-btns"></i>
                     </button>
                     <span className='aside-span'>DMs</span>
                 </li>
                 <li className='aside-list-item'>
                     <button className='aside-btn-list activity'>
-                        <i className="bi bi-bell"></i>
+                        <i className="bi bi-bell aside-btns"></i>
                     </button>
                     <span className='aside-span'>Activity</span>
                 </li>
                 <li className='aside-list-item'>
                     <button className='aside-btn-list later'>
-                        <i className="bi bi-bookmark"></i>
+                        <i className="bi bi-bookmark aside-btns"></i>
                     </button>
                     <span className='aside-span'>Later</span>
                 </li>
                 <li className='aside-list-item'>
                     <button className='aside-btn-list more'>
-                        <i className="bi bi-three-dots"></i>
+                        <i className="bi bi-three-dots aside-btns"></i>
                     </button>
                     <span className='aside-span'>More</span>
                 </li>

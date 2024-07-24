@@ -1,7 +1,7 @@
 aside {
     background-color: #181b1e;
     width: 70px;
-    height: 100vh;
+    height: calc(100vh - 40px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -61,11 +61,14 @@ aside {
 .bi {
     color: white;
     font-size: 18px;
+}
+
+.aside-btns {
     transition: 0.1s all ease-in-out;
     padding: 5px;
 }
 
-.bi:hover {
+.aside-btns:hover {
     color: white;
     font-size: 22px;
     transition: 0.1s all ease-in-out;

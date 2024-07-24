@@ -1,0 +1,37 @@
+.workspace-header {
+    height: 40px;
+    background-color: #181b1e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.workspace-search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    height: 28px;
+    width: 40vw;
+    background-color: #5e5f61;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+}
+
+.workspace-btn-container {
+    position: relative;
+    left: 22vw;
+    display: flex;
+    gap: 10px;
+}
+
+.bi-arrow-left-short , .bi-arrow-right-short {
+    font-size: 20px;
+}
+
+.bi-clock, .bi-search {
+    font-size: 16px;
+}
