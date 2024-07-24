@@ -8,7 +8,7 @@ export const Content = ( {id} ) => {
         <div className='user-info'>
             <button className='user-info-btn'>
                 <img className='user-profile-img' src={local_mook.user_info.profile_img} alt="profile image" />
-                <span className='profile-name'>{local_mook.user_info.username} <i className="bi bi-chevron-down content-chevron-down"></i></span>
+                <span className='profile-name'>{local_mook.user_info.username} <i className="bi bi-chevron-down"></i></span>
             </button>
         </div>
     </div>
