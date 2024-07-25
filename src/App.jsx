@@ -17,7 +17,7 @@ const MOOK = {
             "name": "UTN web development",
             "creation_date": "04/10/2023",
             "workspace_img": "/utn_logo.png",
-            "chanels": [
+            "channels": [
                 {
                     "id": 1,
                     "name": "general",
@@ -30,6 +30,13 @@ const MOOK = {
                             "text": "Buenas, este es el canal general, y es el primer mensaje"
                         }
                     ]
+                },
+                {
+                    "id": 1,
+                    "name": "anounces",
+                    "messages": [
+                        {}
+                    ]
                 }
             ]
         },
@@ -38,7 +45,7 @@ const MOOK = {
             "name": "NASA web development",
             "creation_date": "04/10/2010",
             "workspace_img": "/nasa_logo_icon_181406.webp",
-            "chanels": [
+            "channels": [
                 {
                     "id": 1,
                     "name": "general",
@@ -50,6 +57,61 @@ const MOOK = {
                             "date": "20/07/24",
                             "text": "que hago aca?"
                         }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "important",
+                    "messages": [
+                        {}
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "announcements",
+                    "messages": [
+                        {}
+                    ]
+                },
+                {
+                    "id": 4,
+                    "name": "to-do",
+                    "messages": [
+                        {}
+                    ]
+                },
+                {
+                    "id": 5,
+                    "name": "questions",
+                    "messages": [
+                        {
+                            "id": 1,
+                            "author": "pepe",
+                            "author_img": "/pepe.webp",
+                            "date": "20/07/24",
+                            "text": "que hago aca?"
+                        }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "name": "suggestions",
+                    "messages": [
+                        {}
+                    ]
+                },
+                {
+                    "id": 7,
+                    "name": "tasks",
+                    "messages": [
+                        {}
+                    ]
+                },
+                {
+                    "id": 8,
+                    "name": "memes",
+                    "messages": [
+                        {}
                     ]
                 }
             ]

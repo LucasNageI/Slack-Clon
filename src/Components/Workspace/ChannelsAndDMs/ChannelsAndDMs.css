@@ -1,7 +1,85 @@
-.accecibility {
+.accessibility {
     background-color: #151618;
     display: flex;
+    flex-direction: column;
     height: calc(100vh - 40px);
     width: 25vw;
     border-right: 1px solid #3a3c41;
+    padding: 10px 20px;
+    gap: 10px;
+}
+
+.accessibility-workspace-name {
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.top-accessibility-btns-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 30px 0px;
+    gap: 5px;
+}
+
+.accessibility-workspace-name-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accessibility-side-workspace-name-btns {
+    display: flex;
+    gap: 20px;
+}
+
+.bi-filter, .bi-pencil-square, .bi-chat-text, .bi-send {
+    color: #a1a3a4;
+    font-size: 20px;
+}
+
+.accessibility-btns-span {
+    color: #a1a3a4;
+}
+
+.top-accessibility-btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.channels-span-title {
+    color: #a1a3a4;
+    font-size: 15px;
+}
+
+.bi-caret-down-fill {
+    color: #a1a3a4;
+    font-size: 15px;
+}
+
+.add-channels-span {
+    color: #a1a3a4;
+}
+
+.channels-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+}
+
+.accessibility-create-channel {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    padding: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.accessibility-create-channel:hover {
+    background-color: #27292b;
 }
