@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Aside.css"
+import { Link } from 'react-router-dom'
 
 export const Aside = ({id}) => {
     const local_mook = JSON.parse(localStorage.getItem("MOOK"))
@@ -41,6 +42,12 @@ export const Aside = ({id}) => {
                         <i className="bi bi-three-dots aside-btns"></i>
                     </button>
                     <span className='aside-span'>More</span>
+                </li>
+                <li className='aside-list-item'>
+                    <button className='aside-btn-list later'>
+                        <Link to={"/Home"}><i className="bi bi-arrow-left"></i></Link>
+                    </button>
+                    <span className='aside-span'>Back</span>
                 </li>
             </ul>
         </nav>
