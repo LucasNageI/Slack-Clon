@@ -4,7 +4,7 @@
     background-color: #1a1d22;
 }
 
-.user-info {
+.channel-DM-info {
     border-bottom: 1px solid #3a3c41;
     height: 50px;
     display: flex;
@@ -12,7 +12,7 @@
     padding-left: 20px;
 }
 
-.user-info-btn {
+.channel-DM-info-btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,7 +24,7 @@
     font-size: 14px;
 }
 
-.profile-name {
+.channel-DM-name {
     color: white;
     font-size: 18px;
     font-weight: 800;

@@ -1,16 +1,20 @@
-import React from 'react'
-import "./Content.css"
+// Content.js
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import './Content.css';
 
-export const Content = ( {id} ) => {
-    const local_mook = JSON.parse(localStorage.getItem("MOOK"))
+export const Content = () => {
+  const { clicked_btn } = useParams();
+
   return (
     <section className='content-section'>
-        <div className='user-info'>
-            <button className='user-info-btn'>
-                <img className='user-profile-img' src={local_mook.user_info.profile_img} alt="profile image" />
-                <span className='profile-name'>{local_mook.user_info.username} <i className="bi bi-chevron-down"></i></span>
-            </button>
-        </div>
+      <div className='channel-DM-info'>
+        <button className='channel-DM-info-btn'>
+          <span className='channel-DM-name'>{clicked_btn}</span>
+        </button>
+      </div>
     </section>
-  )
-}
+  );
+};
+
+export default Content;

@@ -1,22 +1,23 @@
-import React from 'react'
-import "./Channels.css"
-import { Link, Route, Routes } from 'react-router-dom'
+// Channels.js
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Channels.css';
 
 export const Channels = ({ channel }) => {
 
-    const btnChannelHandler = (e) => {
-        let btn_id = e.target.id
-    }
-
-    const channel_map = channel.map((channel) => {
-        return(
-        <button to={'./' + channel.name} className='btn-channel-container' onClick={btnChannelHandler} id={channel.id} key={channel.id}>
-            <span id={channel.id}><i className="bi bi-hash"></i></span>
-            <span id={channel.id} className='channel-name-span'>{channel.name}</span>
-        </button>
-        )
-    })
+  const channel_map = channel.map((channel) => {
     return (
-        channel_map
-    )
-}
+      <Link to={channel.name} className='btn-channel-container' key={channel.id}>
+        <span><i className="bi bi-hash"></i></span>
+        <span className='channel-name-span'>{channel.name}</span>
+      </Link>
+    )})
+
+  return (
+    <div>
+      {channel_map}
+    </div>
+  );
+};
+
+export default Channels;
