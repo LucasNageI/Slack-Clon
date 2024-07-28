@@ -49,7 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 120px;
+    border-bottom: 1px solid #eaeaea;
     padding: 20px;
 }
 
@@ -82,7 +82,6 @@
     border: 4px solid #414449;
     height: 97px;
     display: flex;
-    margin: 40px;
 }
 
 .span-btn-container {
@@ -122,7 +121,7 @@
     border-bottom: 2px solid #58b6e4;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1350px) {
     .create-a-new-workspace-container {
         width: 1000px;
     }
@@ -131,5 +130,98 @@
     }
     .welcome-back-container {
         width: 1000px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .create-a-new-workspace-container {
+        width: 800px;
+    }
+    .main-child {
+        width: 800px;
+    }
+    .welcome-back-container {
+        width: 800px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .create-a-new-workspace-container {
+        width: 700px;
+    }
+    .main-child {
+        width: 700px;
+    }
+    .welcome-back-container {
+        width: 700px;
+    }
+}
+
+@media (max-width: 800px) {
+    .create-a-new-workspace-container {
+        width: 500px;
+    }
+    .main-child {
+        width: 500px;
+    }
+    .welcome-back-container {
+        width: 500px;
+    }
+    .create-new-workspace {
+        flex-direction: column;
+    }
+    .img-info-container {
+        flex-direction: column;
+    }
+    .create-workspace-btn {
+        width: 100px;
+        height: 60px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .create-a-new-workspace-container {
+        width: 350px;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        height: 300px;
+    }
+    .span-btn-container {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+    .want-to-switch-team-span {
+        font-size: 13px;
+    }  
+    .change-email-span, .change-email-link {
+        font-size: 13px;
+    }
+    .main-child {
+        width: 350px;
+    }
+    .welcome-back-container {
+        width: 350px;
+    }
+}
+
+@media (max-width: 350px) {
+    .create-a-new-workspace-container {
+        width: 300px;
+    }
+    .main-child {
+        width: 300px;
+    }
+    .welcome-back-container {
+        width: 300px;
+    }
+    .want-to-switch-team-span {
+        font-size: 11px;
+    }  
+    .change-email-span, .change-email-link {
+        font-size: 11px;
     }
 }

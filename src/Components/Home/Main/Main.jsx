@@ -25,7 +25,7 @@ export const Main = () => {
                                     <img className='workspace-img' src={"/workspace-default-icon.png"} alt="workspace image" />
                                 </div>
                                 <div className='info-workspace-container'>
-                                    <h2 className='workspace-title'>New Workspace</h2>
+                                    <span className='workspace-title'>New Workspace</span>
                                     <span>Not created</span>
                                 </div>
                             </div>

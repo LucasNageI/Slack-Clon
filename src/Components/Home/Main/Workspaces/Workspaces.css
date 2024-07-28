@@ -2,15 +2,25 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 120px;
     border-bottom: 1px solid #eaeaea;
     padding: 20px;
+}
+
+.workspace-title {
+    text-decoration: solid;
+    font-size: 20px;
+    font-weight: 800;
 }
 
 .img-info-container {
     display: flex;
     gap: 20px;
     align-items: center;
+}
+
+.info-workspace-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .workspace-img {
@@ -23,4 +33,22 @@
 
 .launch-slack-btn:hover {
     background-origin: #4f1852;
+}
+
+@media (max-width: 800px) {
+    .workspace {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .info-workspace-container {
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+
+}
+
+@media (max-width: 350px) {
+
 }

@@ -150,10 +150,6 @@
 }
 
 @media (max-width: 1200px) {
-    .talk-to-sales {
-        display: none;
-    }
-
     .navbar-btn.close-ham-menu {
         position: relative;
         left: 70vw;
@@ -162,10 +158,6 @@
 
 
 @media (max-width: 1000px) {
-    .talk-to-sales {
-        display: none;
-    }
-
     .navbar-btn.close-ham-menu {
         position: relative;
         left: 65vw;
@@ -173,17 +165,20 @@
 }
 
 @media (max-width: 800px) {
-    .talk-to-sales {
-        display: none;
-    }
-
     .navbar-btn.close-ham-menu {
         position: relative;
         left: 60vw;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
+    .navbar-btn.close-ham-menu {
+        position: relative;
+        left: 50vw;
+    }
+}
+
+@media (max-width: 350px) {
     .navbar-btn.close-ham-menu {
         position: relative;
         left: 40vw;
