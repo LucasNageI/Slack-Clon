@@ -183,4 +183,9 @@
     }
 }
 
-
+@media (max-width: 400px) {
+    .navbar-btn.close-ham-menu {
+        position: relative;
+        left: 40vw;
+    }
+}
