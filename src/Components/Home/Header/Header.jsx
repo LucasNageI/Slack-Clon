@@ -29,7 +29,6 @@ export const Header = () => {
                     </button>
                     <div className={`btn-list ${isOpen ? 'open' : 'closed'}`}>
                         <Link to={'/CreateWorkspace'} className={`btn header-create-workspace-btn ${isOpen ? 'open' : 'closed'}`}>
-                        <i className="bi bi-plus-square"></i>
                         <span className='create-a-new-workspace-span'>CREATE A NEW WORKSPACE</span>
                         </Link>
                     </div>

@@ -1,20 +1,15 @@
 import React from 'react'
-import "./ChannelsAndDMs.css"
+import "./Accessibility.css"
 import { Channels } from './Channels/Channels'
-import { DMs } from './DMs/DMs.jsx'
 
-export const ChannelsAndDMs = ({ id }) => {
+export const Accessibility = ({ id }) => {
     const local_mook = JSON.parse(localStorage.getItem("MOOK"))
     return (
         <section className='accessibility'>
             <div className='accessibility-workspace-name-container'>
-                <button>
+                <button className='accessibility-workspace-name-btn'>
                     <span className='accessibility-workspace-name'>{local_mook.workspaces[id - 1].name} <i className="bi bi-chevron-down"></i></span>
                 </button>
-                <div className='accessibility-side-workspace-name-btns'>
-                    <button><i className="bi bi-filter"></i></button>
-                    <button><i className="bi bi-pencil-square"></i></button>
-                </div>
             </div>
             <div className='top-accessibility-btns-container'>
                 <button className='top-accessibility-btns'>
@@ -34,12 +29,6 @@ export const ChannelsAndDMs = ({ id }) => {
                 <button className='accessibility-create-channel'>
                     <span className='add-channels-span'><i className="bi bi-plus"></i> Add channels</span>
                 </button>
-            </div>
-            <div className='MDs-main-container'>
-                <button>
-                    <span className='channels-span-title'><i className="bi bi-caret-down-fill"></i> Direct messages</span>
-                </button>
-                <DMs id={id} />
             </div>
         </section>
     )

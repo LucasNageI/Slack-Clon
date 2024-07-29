@@ -29,12 +29,7 @@
     justify-content: space-between;
 }
 
-.accessibility-side-workspace-name-btns {
-    display: flex;
-    gap: 20px;
-}
-
-.bi-filter, .bi-pencil-square, .bi-chat-text, .bi-send {
+.bi-chat-text, .bi-send {
     color: #a1a3a4;
     font-size: 20px;
 }
@@ -83,11 +78,4 @@
 
 .accessibility-create-channel:hover {
     background-color: #27292b;
-}
-
-.MDs-main-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: start;
 }

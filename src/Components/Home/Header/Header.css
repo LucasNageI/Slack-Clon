@@ -16,12 +16,12 @@
     margin: 0 50px;
 }
 
-.nav-list  {
+.nav-list {
     display: flex;
     align-items: center;
 }
 
-.nav-list .list-container {
+.list-container {
     display: flex;
     gap: 25px;
 }
@@ -40,16 +40,11 @@
     display: none;
 }
 
-
 .btn-list {
     height: 50px;
     display: flex;
     align-items: center;
     gap: 25px;
-}
-
-.search {
-    border-radius: 5px;
 }
 
 .header-create-workspace-btn {
@@ -64,14 +59,10 @@
     transition: all 0.5s ease;
 }
 
-.create-workspace-btn:hover {
+.header-create-workspace-btn:hover {
     border-radius: 2px;
     outline: 2px solid #414449;
     border: 3px solid #535557;
-}
-
-.bi-plus-square {
-    display: none;
 }
 
 @media (max-width: 1350px) {
@@ -106,46 +97,35 @@
         z-index: 10;
     }
 
-    .btn-list {
-        display: none;
-    }
-    
     .btn-list.open {
         display: flex;
         z-index: 10;
     }
-    
-    .btn {
-        background-color: #4d4f51;
-        border-radius: 50px;
-    }
 
-    .btn:hover {
-        border-radius: 50px;
-    }
-
-
-    .create-a-new-workspace-span {
+    .header-create-workspace-btn  {
         display: none;
     }
 
-    .bi-plus-square {
+    .bi-list {
         display: flex;
-
+        z-index: 20;
     }
 
-    .navbar-btn.close-ham-menu, .navbar-btn.open-ham-menu {
+    .bi-x {
         display: flex;
+        z-index: 20;
+        position: relative;
+        left: 85vw;
+        top: 3vh;
     }
 
     .navbar-btn.close-ham-menu {
-
+        display: flex;
         left: 80vw;
     }
 
-    .bi-x, .bi-list {
-        display: flex;
-        z-index: 20;
+    .list-container {
+        display: none;
     }
 
     .list-container.open {
@@ -153,27 +133,23 @@
         flex-direction: column;
         gap: 40px;
     }
-
-    .li-btn.open {
-        display: flex;
-    }
-
-    .li-btn.closed {
-        display: none;
-    }
 }
 
 @media (max-width: 1200px) {
     .navbar-btn.close-ham-menu {
-        position: relative;
         left: 70vw;
     }
+    .bi-x {
+        left: 80vw;
+    }
 }
-
 
 @media (max-width: 1000px) {
     .navbar-btn.close-ham-menu {
         left: 65vw;
+    }
+    .bi-x {
+        left: 75vw;
     }
 }
 
@@ -181,16 +157,25 @@
     .navbar-btn.close-ham-menu {
         left: 60vw;
     }
+    .bi-x {
+        left: 70vw;
+    }
 }
 
 @media (max-width: 500px) {
     .navbar-btn.close-ham-menu {
         left: 50vw;
     }
+    .bi-x {
+        left: 60vw;
+    }
 }
 
 @media (max-width: 350px) {
     .navbar-btn.close-ham-menu {
         left: 40vw;
+    }
+    .bi-x {
+        left: 50vw;
     }
 }
