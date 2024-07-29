@@ -127,9 +127,7 @@
     .inputs-container {
         width: 500px;
     }
-
-    .workspace-name,
-    .channel-name {
+    .workspace-name, .channel-name, .error-span, .confirm-workspace, .back-workspace {
         font-size: 16px;
     }
 }
@@ -155,6 +153,9 @@
     .channel-name {
         font-size: 13px;
         padding: 2px;
+    }
+    .workspace-name, .channel-name, .error-span, .confirm-workspace, .back-workspace {
+        font-size: 13px;
     }
 }
 
