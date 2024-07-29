@@ -1,104 +1,140 @@
-import React from 'react'
-import "./Links.css"
+import React, { useState } from 'react';
+import './Links.css';
+
+const Dropdown = ({ title, items }) => {
+    const [isOpen, setIsOpen] = useState(true)
+
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen)
+    }
+
+    return (
+        <div className={`dropdown ${isOpen ? 'open' : ''}`}>
+            <button className='dropdown-button' onClick={toggleDropdown}>
+                {title}
+                <i className={`section-titles-icon ${isOpen ? 'bi bi-chevron-down' : 'bi bi-chevron-up'}`}></i>
+            </button>
+            <ul className='dropdown-menu'>
+                {items.map((item, index) => (
+                    <li key={index}>
+                        <a className='list-item' href={item.href}>
+                            {item.label}
+                        </a>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    )
+}
 
 export const Links = () => {
+    const sections = [
+        {
+            title: 'PRODUCT',
+            items: [
+                { label: 'Watch Demo', href: '' },
+                { label: 'Pricing', href: '' },
+                { label: 'Paid vs. Free', href: '' },
+                { label: 'Accessibility', href: '' },
+                { label: 'Featured Releases', href: '' },
+                { label: 'Changelog', href: '' },
+                { label: 'Status', href: '' },
+            ],
+        },
+        {
+            title: 'WHY SLACK?',
+            items: [
+                { label: 'Slack vs. Email', href: '' },
+                { label: 'Enterprise', href: '' },
+                { label: 'Small Business', href: '' },
+                { label: 'Productivity', href: '' },
+                { label: 'Task Management', href: '' },
+                { label: 'Scale', href: '' },
+                { label: 'Trust', href: '' },
+            ],
+        },
+        {
+            title: 'FEATURES',
+            items: [
+                { label: 'Channels', href: '' },
+                { label: 'Slack Connect', href: '' },
+                { label: 'Workflow Builder', href: '' },
+                { label: 'Messaging', href: '' },
+                { label: 'Huddles', href: '' },
+                { label: 'Canvas', href: '' },
+                { label: 'Lists', href: '' },
+                { label: 'Clips', href: '' },
+                { label: 'Search', href: '' },
+                { label: 'Apps & Integrations', href: '' },
+                { label: 'File Sharing', href: '' },
+                { label: 'Slack AI', href: '' },
+                { label: 'Security', href: '' },
+                { label: 'Enterprise Key Management', href: '' },
+                { label: 'Slack Atlas', href: '' },
+            ],
+        },
+        {
+            title: 'SOLUTIONS',
+            items: [
+                { label: 'Engineering', href: '' },
+                { label: 'IT', href: '' },
+                { label: 'Customer Service', href: '' },
+                { label: 'Sales', href: '' },
+                { label: 'Project Management', href: '' },
+                { label: 'Marketing', href: '' },
+                { label: 'Security', href: '' },
+                { label: 'Technology', href: '' },
+                { label: 'Media', href: '' },
+                { label: 'Financial Services', href: '' },
+                { label: 'Retail', href: '' },
+                { label: 'Public Sector', href: '' },
+                { label: 'Education', href: '' },
+                { label: 'Health & Life Sciences', href: '' },
+                { label: 'See all solutions', href: '' },
+            ],
+        },
+        {
+            title: 'RESOURCES',
+            items: [
+                { label: 'Help Center', href: '' },
+                { label: 'What\'s New', href: '' },
+                { label: 'Resources Library', href: '' },
+                { label: 'Slack Blog', href: '' },
+                { label: 'Community', href: '' },
+                { label: 'Customer Stories', href: '' },
+                { label: 'Events', href: '' },
+                { label: 'Developers', href: '' },
+                { label: 'Partners', href: '' },
+                { label: 'Partner Offers', href: '' },
+                { label: 'App Directory', href: '' },
+                { label: 'Slack Certified', href: '' },
+            ],
+        },
+        {
+            title: 'COMPANY',
+            items: [
+                { label: 'About Us', href: '' },
+                { label: 'News', href: '' },
+                { label: 'Media Kit', href: '' },
+                { label: 'Brand Center', href: '' },
+                { label: 'Careers', href: '' },
+                { label: 'Swag Store', href: '' },
+                { label: 'Engineering', href: '' },
+                { label: 'Design Blog', href: '' },
+                { label: 'Contact Us', href: '' },
+            ],
+        },
+    ]
+
     return (
         <div className='main-footer'>
             <div className='slack-icon-container'>
                 <img className='slack-icon' src={"/slack_icon.png"} alt="slack icon" />
             </div>
             <div className='footer-list'>
-
-                <ul className='list-items-container'>
-                    <li><span className='list-titles'>PRODUCT</span></li>
-                    <li><a className='list-item' href="">Watch Demo</a></li>
-                    <li><a className='list-item' href="">Pricing</a></li>
-                    <li><a className='list-item' href="">Paid vs. Free</a></li>
-                    <li><a className='list-item' href="">Accessibility</a></li>
-                    <li><a className='list-item' href="">Featured Releases</a></li>
-                    <li><a className='list-item' href="">Changelog</a></li>
-                    <li><a className='list-item' href="">Status</a></li>
-                    <li>
-                        <ul className='list-items-container'>
-                            <li><span className='list-titles'>WHY SLACK?</span></li>
-                            <li><a className='list-item' href="">Slack vs. Email</a></li>
-                            <li><a className='list-item' href="">Enterprise</a></li>
-                            <li><a className='list-item' href="">Small Business</a></li>
-                            <li><a className='list-item' href="">Productivity</a></li>
-                            <li><a className='list-item' href="">Task Management</a></li>
-                            <li><a className='list-item' href="">Scale</a></li>
-                            <li><a className='list-item' href="">Trust</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul className='list-items-container'>
-                    <li><span className='list-titles'>FEATURES</span></li>
-                    <li><a className='list-item' href="">Channels</a></li>
-                    <li><a className='list-item' href="">Slack Connect</a></li>
-                    <li><a className='list-item' href="">Workflow Builder</a></li>
-                    <li><a className='list-item' href="">Messaging</a></li>
-                    <li><a className='list-item' href="">Huddles</a></li>
-                    <li><a className='list-item' href="">Canvas</a></li>
-                    <li><a className='list-item' href="">Lists</a></li>
-                    <li><a className='list-item' href="">Clips</a></li>
-                    <li><a className='list-item' href="">Search</a></li>
-                    <li><a className='list-item' href="">Apps & Integrations</a></li>
-                    <li><a className='list-item' href="">File Sharing</a></li>
-                    <li><a className='list-item' href="">Slack AI</a></li>
-                    <li><a className='list-item' href="">Security</a></li>
-                    <li><a className='list-item' href="">Enterprise Key Management</a></li>
-                    <li><a className='list-item' href="">Slack Atlas</a></li>
-                </ul>
-
-                <ul className='list-items-container'>
-                    <li><span className='list-titles'>SOLUTIONS</span></li>
-                    <li><a className='list-item' href="">Engineering</a></li>
-                    <li><a className='list-item' href="">IT</a></li>
-                    <li><a className='list-item' href="">Customer Service</a></li>
-                    <li><a className='list-item' href="">Sales</a></li>
-                    <li><a className='list-item' href="">Project Management</a></li>
-                    <li><a className='list-item' href="">Marketing</a></li>
-                    <li><a className='list-item' href="">Security</a></li>
-                    <li><a className='list-item' href="">Technology</a></li>
-                    <li><a className='list-item' href="">Media</a></li>
-                    <li><a className='list-item' href="">Financial Services</a></li>
-                    <li><a className='list-item' href="">Retail</a></li>
-                    <li><a className='list-item' href="">Public Sector</a></li>
-                    <li><a className='list-item' href="">Education</a></li>
-                    <li><a className='list-item' href="">Health & Life Sciences</a></li>
-                    <li><a className='list-item' href="">See all solutions</a></li>
-                </ul>
-
-                <ul className='list-items-container'>
-                    <li><span className='list-titles'>RESOURCES</span></li>
-                    <li><a className='list-item' href="">Help Center</a></li>
-                    <li><a className='list-item' href="">What's New</a></li>
-                    <li><a className='list-item' href="">Resources Library</a></li>
-                    <li><a className='list-item' href="">Slack Blog</a></li>
-                    <li><a className='list-item' href="">Community</a></li>
-                    <li><a className='list-item' href="">Customer Stories</a></li>
-                    <li><a className='list-item' href="">Events</a></li>
-                    <li><a className='list-item' href="">Developers</a></li>
-                    <li><a className='list-item' href="">Partners</a></li>
-                    <li><a className='list-item' href="">Partner Offers</a></li>
-                    <li><a className='list-item' href="">App Directory</a></li>
-                    <li><a className='list-item' href="">Slack Certified</a></li>
-                </ul>
-
-                <ul className='list-items-container'>
-                    <li><span className='list-titles'>COMPANY</span></li>
-                    <li><a className='list-item' href="">About Us</a></li>
-                    <li><a className='list-item' href="">News</a></li>
-                    <li><a className='list-item' href="">Media Kit</a></li>
-                    <li><a className='list-item' href="">Brand Center</a></li>
-                    <li><a className='list-item' href="">Careers</a></li>
-                    <li><a className='list-item' href="">Swag Store</a></li>
-                    <li><a className='list-item' href="">Engineering</a></li>
-                    <li><a className='list-item' href="">Design Blog</a></li>
-                    <li><a className='list-item' href="">Contact Us</a></li>
-                </ul>
-
+                {sections.map((section, index) => (
+                    <Dropdown key={index} title={section.title} items={section.items} />
+                ))}
             </div>
         </div>
     )

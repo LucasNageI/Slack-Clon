@@ -45,7 +45,7 @@ export const Aside = ({id}) => {
                 </li>
                 <li className='aside-list-item'>
                     <button className='aside-btn-list later'>
-                        <Link to={"/Home"}><i className="bi bi-arrow-left"></i></Link>
+                        <Link to={"/Home"}><i className="bi bi-arrow-left aside-btns"></i></Link>
                     </button>
                     <span className='aside-span'>Back</span>
                 </li>

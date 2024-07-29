@@ -59,13 +59,14 @@ aside {
 }
 
 .bi {
-    color: white;
     font-size: 18px;
 }
 
 .aside-btns {
     transition: 0.1s all ease-in-out;
     padding: 5px;
+    color: white;
+    font-size: 18px;
 }
 
 .aside-btns:hover {

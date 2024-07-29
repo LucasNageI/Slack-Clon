@@ -15,7 +15,7 @@
 }
 
 .region-btn-container {
-    margin: 100px 0px;
+    margin: 100px 0;
 }
 
 .region-btn {
@@ -32,6 +32,7 @@
 .social-media-item {
     color: black;
     font-size: 18px;
+    border-radius: 5px;
 }
 
 .social-media-item:hover {
@@ -71,8 +72,44 @@
     font-size: 14px;
 }
 
-@media (max-width: 1250px) {
-    .legal-section {
+@media (max-width: 1350px) {
+    .region-and-media-container, .legal-section {
         width: 1000px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .region-and-media-container, .legal-section {
+        width: 900px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .region-and-media-container, .legal-section {
+        width: 700px;
+    }
+    .social-media-container {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .region-and-media-container, .legal-section {
+        width: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    .region-and-media-container, .legal-section {
+        width: 400px;
+    }
+    .social-media-container {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .region-and-media-container, .legal-section {
+        width: 300px;
     }
 }

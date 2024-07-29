@@ -52,20 +52,7 @@
     border-radius: 5px;
 }
 
-.talk-to-sales {
-    border: 2px solid rgba(255, 255, 255, 0.7);
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
-    font-weight: 800;
-    transition: all 0.5s ease;
-}
-
-.talk-to-sales:hover {
-    border: 2px solid rgba(255, 255, 255, 1);
-}
-
-.create-workspace-btn {
+.header-create-workspace-btn {
     text-decoration: none;
     background-color: white;
     padding: 15px;
@@ -83,14 +70,13 @@
     border: 3px solid #535557;
 }
 
+.bi-plus-square {
+    display: none;
+}
+
 @media (max-width: 1350px) {
     .btn-list {
         display: none;
-    }
-
-    .nav .ham-menu-container {
-        display: flex;
-        justify-content: space-between;
     }
 
     .navbar-btn {
@@ -106,9 +92,10 @@
 
     .nav-list.open {
         padding: 25px 50px;
+        margin-top: 16px;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: start;
         gap: 20px;
         position: absolute;
         width: 100vw;
@@ -119,13 +106,40 @@
         z-index: 10;
     }
 
+    .btn-list {
+        display: none;
+    }
+    
+    .btn-list.open {
+        display: flex;
+        z-index: 10;
+    }
+    
+    .btn {
+        background-color: #4d4f51;
+        border-radius: 50px;
+    }
+
+    .btn:hover {
+        border-radius: 50px;
+    }
+
+
+    .create-a-new-workspace-span {
+        display: none;
+    }
+
+    .bi-plus-square {
+        display: flex;
+
+    }
 
     .navbar-btn.close-ham-menu, .navbar-btn.open-ham-menu {
         display: flex;
     }
 
     .navbar-btn.close-ham-menu {
-        position: relative;
+
         left: 80vw;
     }
 
@@ -159,28 +173,24 @@
 
 @media (max-width: 1000px) {
     .navbar-btn.close-ham-menu {
-        position: relative;
         left: 65vw;
     }
 }
 
 @media (max-width: 800px) {
     .navbar-btn.close-ham-menu {
-        position: relative;
         left: 60vw;
     }
 }
 
 @media (max-width: 500px) {
     .navbar-btn.close-ham-menu {
-        position: relative;
         left: 50vw;
     }
 }
 
 @media (max-width: 350px) {
     .navbar-btn.close-ham-menu {
-        position: relative;
         left: 40vw;
     }
 }

@@ -24,15 +24,14 @@ export const Header = () => {
                     </ul>
                 </div>
                 <div className='btn-container'>
-                    <button className='search btn'>
-                        <i className="bi bi-search"></i>
-                    </button>
                     <button onClick={handleHamMenu} className={`navbar-btn ${isOpen ? 'close-ham-menu' : 'open-ham-menu'}`}>
                         <i className={`bi ${isOpen ? 'bi-x' : 'bi-list'}`}></i>
                     </button>
-                    <div className='btn-list'>
-                        <button className='btn talk-to-sales'>TALK TO SALES</button>
-                        <Link to={"/CreateWorkspace"} className='btn create-workspace-btn'>CREATE A NEW WORKSPACE</Link>
+                    <div className={`btn-list ${isOpen ? 'open' : 'closed'}`}>
+                        <Link to={'/CreateWorkspace'} className={`btn header-create-workspace-btn ${isOpen ? 'open' : 'closed'}`}>
+                        <i className="bi bi-plus-square"></i>
+                        <span className='create-a-new-workspace-span'>CREATE A NEW WORKSPACE</span>
+                        </Link>
                     </div>
                 </div>
             </nav>
