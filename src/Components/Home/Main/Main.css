@@ -143,6 +143,9 @@
     .welcome-back-container {
         width: 1000px;
     }
+    .span-btn-container {
+        width: 1000px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -153,6 +156,9 @@
         width: 800px;
     }
     .welcome-back-container {
+        width: 800px;
+    }
+    .span-btn-container {
         width: 800px;
     }
 }
@@ -168,6 +174,9 @@
     .welcome-back-container {
         width: 700px;
     }
+    .span-btn-container {
+        width: 700px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -178,6 +187,9 @@
         width: 500px;
     }
     .welcome-back-container {
+        width: 500px;
+    }
+    .span-btn-container {
         width: 500px;
     }
     .create-new-workspace {
@@ -218,6 +230,10 @@
     .welcome-back-container {
         width: 350px;
     }
+
+    .span-btn-container {
+        width: 350px;
+    }
 }
 
 @media (max-width: 350px) {
@@ -228,6 +244,9 @@
         width: 300px;
     }
     .welcome-back-container {
+        width: 300px;
+    }
+    .span-btn-container {
         width: 300px;
     }
     .want-to-switch-team-span {
