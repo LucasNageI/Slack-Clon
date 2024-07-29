@@ -101,7 +101,7 @@
 
 @media (max-width: 500px) {
     .region-and-media-container, .legal-section {
-        width: 400px;
+        width: 350px;
     }
     .social-media-container {
         gap: 10px;
