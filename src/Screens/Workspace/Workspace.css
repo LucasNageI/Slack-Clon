@@ -7,9 +7,9 @@
 
 .Aside-Accessibility-Content-container {
     display: flex;
-    flex-direction: row;
-    width: 100vw;
+    width: 100%;
     background-color: #181b1e;
+    position: relative;
 }
 
 .channel-content-container {

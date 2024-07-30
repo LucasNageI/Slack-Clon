@@ -127,7 +127,7 @@ function App() {
         <Route element={<Home/>} path='/'></Route>
         <Route element={<Home/>} path='/Home'></Route>
         <Route element={<CreateWorkspace/>} path='/CreateWorkspace'></Route>
-        <Route element={<Workspace />} path="/workspace/:id/*"/>
+        <Route element={<Workspace />} path="/workspace/:id*"/>
     </Routes>
   )
 }

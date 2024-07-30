@@ -8,7 +8,7 @@ export const Accessibility = ({ id }) => {
         <section className='accessibility'>
             <div className='accessibility-workspace-name-container'>
                 <button className='accessibility-workspace-name-btn'>
-                    <span className='accessibility-workspace-name'>{local_mook.workspaces[id - 1].name} <i className="bi bi-chevron-down"></i></span>
+                    <span className='accessibility-workspace-name'>{local_mook.workspaces[id - 1].name}</span>
                 </button>
             </div>
             <div className='top-accessibility-btns-container'>

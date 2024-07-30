@@ -13,9 +13,9 @@ export const Workspace = () => {
                 <Aside id={id} />
                 <div className='channel-content-container'>
                     <Accessibility id={id} />
-                    <Content />
                     <Routes>
                         <Route element={<Content />} path=":clicked_btn"></Route>
+                        <Route element={<Content />} path="*"></Route>
                     </Routes>
                 </div>
             </div>

@@ -1,33 +1,32 @@
 .content-section {
-    width: 50vw;
+    width: calc(100vw - 15vw - 75px);
     height: calc(100vh - 40px);
     background-color: #1a1d22;
+    display: flex;
+    flex-direction: column;
 }
 
-.channel-DM-info {
+.accessibility-info {
     border-bottom: 1px solid #3a3c41;
     height: 50px;
     display: flex;
     align-items: center;
-    padding-left: 20px;
+    justify-content: start;
 }
 
-.channel-DM-info-btn {
+.accessibility-span-name {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    gap: 8px;
+    justify-content: start;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .bi-chevron-down {
     font-size: 14px;
-}
-
-.channel-DM-name {
-    color: white;
-    font-size: 18px;
-    font-weight: 800;
 }
 
 .user-profile-img {
