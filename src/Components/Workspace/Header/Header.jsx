@@ -3,7 +3,7 @@ import "./Header.css"
 
 const local_mook = JSON.parse(localStorage.getItem("MOOK"))
 
-export const Header = ({ id }) => {
+export const Header = ({ workspace_id }) => {
 
   return (
     <header className='workspace-header'>
@@ -12,7 +12,7 @@ export const Header = ({ id }) => {
             <button><i className="bi bi-arrow-right-short"></i></button>
             <button><i className="bi bi-clock"></i></button>
             <button className='workspace-search-btn'>
-                <span>Search {local_mook.workspaces[id - 1].name}</span>
+                <span>Search {local_mook.workspaces[workspace_id - 1].name}</span>
                 <i className="bi bi-search"></i>
             </button>
         </div>

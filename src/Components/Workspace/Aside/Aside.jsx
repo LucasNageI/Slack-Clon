@@ -2,7 +2,7 @@ import React from 'react'
 import "./Aside.css"
 import { Link } from 'react-router-dom'
 
-export const Aside = ({id}) => {
+export const Aside = ({workspace_id}) => {
     const local_mook = JSON.parse(localStorage.getItem("MOOK"))
   return (
     <aside className='aside'>
@@ -10,7 +10,7 @@ export const Aside = ({id}) => {
             <ul className='aside-nav-list'>
                 <li className='aside-list-item'>
                     <button>
-                        <img className='aside-workspace-img' src={local_mook.workspaces[id - 1].workspace_img} alt="workspace image" />
+                        <img className='aside-workspace-img' src={local_mook.workspaces[workspace_id - 1].workspace_img} alt="workspace image" />
                     </button>
                 </li>
                 <li className='aside-list-item'>

@@ -1,21 +1,21 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { Aside, Accessibility, Content, Header } from '../../Components/Workspace/index.js'
+import { Aside, Accessibility, Content, Header} from '../../Components/Workspace/index.js'
 import './Workspace.css'
 import { Route, Routes } from 'react-router-dom'
 
 export const Workspace = () => {
-    const { id } = useParams()
+    const { workspace_id } = useParams()
     return (
         <div className='main-page'>
-            <Header id={id} />
+            <Header workspace_id={workspace_id} />
             <div className='Aside-Accessibility-Content-container'>
-                <Aside id={id} />
+                <Aside workspace_id={workspace_id} />
                 <div className='channel-content-container'>
-                    <Accessibility id={id} />
+                    <Accessibility workspace_id={workspace_id} />
                     <Routes>
-                        <Route element={<Content />} path=":clicked_btn"></Route>
-                        <Route element={<Content />} path="*"></Route>
+                        <Route element={<Content />} path="/Workspace/:workspace_id/"></Route>
+                        <Route element={<Content workspace_id={workspace_id} />} path="/*"></Route>
                     </Routes>
                 </div>
             </div>

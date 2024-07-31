@@ -4,6 +4,9 @@ import { FormWorkspace } from '/src/Components/CreateWorkspace/FormWorkspace'
 
 export const CreateWorkspace = () => {
     return (
-        <FormWorkspace/>
+        <div className='form-workspace-page'>
+            <FormWorkspace/>
+        </div>
+
     )
 }
