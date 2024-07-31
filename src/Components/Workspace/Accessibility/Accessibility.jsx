@@ -25,7 +25,7 @@ export const Accessibility = ({ workspace_id }) => {
                 <button>
                     <span className='channels-span-title'><i className="bi bi-caret-down-fill"></i> Channels</span>
                 </button>
-                <Channels channel={local_mook.workspaces[workspace_id - 1].channels} workspace_id={workspace_id} />
+                <Channels channels={local_mook.workspaces[workspace_id - 1].channels} />
                 <button className='accessibility-create-channel'>
                     <span className='add-channels-span'><i className="bi bi-plus"></i> Add channels</span>
                 </button>

@@ -16,7 +16,7 @@ export const Workspaces = ({ workspace }) => {
                     </div>
                 </div>
                 <div className='launch-slack-container'>
-                <Link to={`/Workspace/${workspace.id}/*`} className='launch-slack-btn'>LAUNCH SLACK</Link>
+                <Link to={`/Workspace/${workspace.id}/1`} className='launch-slack-btn'>LAUNCH SLACK</Link>
                 </div>
             </div>
         )

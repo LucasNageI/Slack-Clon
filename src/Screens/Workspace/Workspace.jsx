@@ -14,7 +14,7 @@ export const Workspace = () => {
                 <div className='channel-content-container'>
                     <Accessibility workspace_id={workspace_id} />
                     <Routes>
-                        <Route element={<Content />} path="/Workspace/:workspace_id/"></Route>
+                        <Route element={<Content workspace_id={workspace_id} />} path="/Workspace/:workspace_id/*"></Route>
                         <Route element={<Content workspace_id={workspace_id} />} path="/*"></Route>
                     </Routes>
                 </div>
