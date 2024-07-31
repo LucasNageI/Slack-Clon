@@ -2,8 +2,9 @@ import React from 'react'
 import "./Main.css"
 import { Workspaces } from './Workspaces/Workspaces.jsx'
 import { Link } from 'react-router-dom'
+import { getMook } from '../../../localStorageFns.js'
 
-const local_mook = JSON.parse(localStorage.getItem("MOOK"))
+const localStorage_mook = getMook()
 
 export const Main = () => {
     return (
@@ -15,10 +16,10 @@ export const Main = () => {
             <div className='main-child'>
                 <div className='workspaces-container'>
                     <div className='user-workspaces-container'>
-                        <span className='user-workspaces'>Workspaces for {local_mook.user_info.email}</span>
+                        <span className='user-workspaces'>Workspaces for {localStorage_mook.user_info.email}</span>
                     </div>
                     <div className='workspaces-list'>
-                        <Workspaces workspace={local_mook.workspaces} />
+                        <Workspaces workspace={localStorage_mook.workspaces} />
                         <div className='create-new-workspace'>
                             <div className='img-info-container'>
                                 <div className='workspace-img-container'>

@@ -1,14 +1,16 @@
 import React from 'react'
 import "./Accessibility.css"
 import { Channels } from './Channels/Channels'
+import { getMook } from '../../../localStorageFns.js'
+
+const localStorage_mook = getMook()
 
 export const Accessibility = ({ workspace_id }) => {
-    const local_mook = JSON.parse(localStorage.getItem("MOOK"))
     return (
         <section className='accessibility'>
             <div className='accessibility-workspace-name-container'>
                 <button className='accessibility-workspace-name-btn'>
-                    <span className='accessibility-workspace-name'>{local_mook.workspaces[workspace_id - 1].name}</span>
+                    <span className='accessibility-workspace-name'>{localStorage_mook.workspaces[workspace_id - 1].name}</span>
                 </button>
             </div>
             <div className='top-accessibility-btns-container'>
@@ -25,7 +27,7 @@ export const Accessibility = ({ workspace_id }) => {
                 <button>
                     <span className='channels-span-title'><i className="bi bi-caret-down-fill"></i> Channels</span>
                 </button>
-                <Channels channels={local_mook.workspaces[workspace_id - 1].channels} />
+                <Channels channels={localStorage_mook.workspaces[workspace_id - 1].channels} />
                 <button className='accessibility-create-channel'>
                     <span className='add-channels-span'><i className="bi bi-plus"></i> Add channels</span>
                 </button>

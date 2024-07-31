@@ -59,6 +59,20 @@ export const MOOK = {
                             "author_img": "/pepe.webp",
                             "date": "20/07/24",
                             "text": "re piola"
+                        },
+                        {
+                            "id": 3,
+                            "author": "pepe",
+                            "author_img": "/pepe.webp",
+                            "date": "20/07/24",
+                            "text": "que hago aca?"
+                        },
+                        {
+                            "id": 4,
+                            "author": "pepe",
+                            "author_img": "/pepe.webp",
+                            "date": "20/07/24",
+                            "text": "re piola"
                         }
                     ]
                 },

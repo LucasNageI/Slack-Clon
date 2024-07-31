@@ -1,16 +1,18 @@
 import React from 'react'
 import "./Aside.css"
 import { Link } from 'react-router-dom'
+import { getMook } from '../../../localStorageFns.js'
+
+const localStorage_mook = getMook()
 
 export const Aside = ({workspace_id}) => {
-    const local_mook = JSON.parse(localStorage.getItem("MOOK"))
   return (
     <aside className='aside'>
         <nav className='aside-nav'>
             <ul className='aside-nav-list'>
                 <li className='aside-list-item'>
                     <button>
-                        <img className='aside-workspace-img' src={local_mook.workspaces[workspace_id - 1].workspace_img} alt="workspace image" />
+                        <img className='aside-workspace-img' src={localStorage_mook.workspaces[workspace_id - 1].workspace_img} alt="workspace image" />
                     </button>
                 </li>
                 <li className='aside-list-item'>
@@ -53,7 +55,7 @@ export const Aside = ({workspace_id}) => {
         </nav>
         <div className='aside-profile-img-container'>
             <button className='create-new'><i className="bi bi-plus-lg"></i></button>
-            <img className='aside-profile-img' src={local_mook.user_info.profile_img} alt="profile image" />
+            <img className='aside-profile-img' src={localStorage_mook.user_info.profile_img} alt="profile image" />
         </div>
     </aside>
   )

@@ -1,7 +1,8 @@
 import React from 'react'
 import "./Header.css"
+import { getMook } from '../../../localStorageFns.js'
 
-const local_mook = JSON.parse(localStorage.getItem("MOOK"))
+const localStorage_mook = getMook()
 
 export const Header = ({ workspace_id }) => {
 
@@ -12,7 +13,7 @@ export const Header = ({ workspace_id }) => {
             <button><i className="bi bi-arrow-right-short"></i></button>
             <button><i className="bi bi-clock"></i></button>
             <button className='workspace-search-btn'>
-                <span>Search {local_mook.workspaces[workspace_id - 1].name}</span>
+                <span>Search {localStorage_mook.workspaces[workspace_id - 1].name}</span>
                 <i className="bi bi-search"></i>
             </button>
         </div>

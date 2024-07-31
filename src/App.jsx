@@ -2,10 +2,10 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { Home, CreateWorkspace, Workspace }from './Screens/index.js'
 import { MOOK } from './data.js'
-
+import { saveMook } from './localStorageFns.js'
 
 function App() {
-    localStorage.setItem("MOOK", JSON.stringify(MOOK))
+    saveMook(MOOK)
   return (
     <Routes>
         <Route element={<Home/>} path='/'></Route>
