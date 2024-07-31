@@ -7,7 +7,7 @@ export const Messages = ( {channel} ) => {
 
     return (
     <div>
-        <span className='message'>{channel.messages[3].text}</span>
+        <span className='message'>{channel.name}</span>
         {/* crear un componente nuevo para mandar mensajes */}
     </div>
   )
