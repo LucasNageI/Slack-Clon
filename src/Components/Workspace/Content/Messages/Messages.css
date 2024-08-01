@@ -1,4 +1,56 @@
-.message {
-    color: white;
+.message-container {
+    display: flex;
+    align-items: start;
     padding: 5px;
+    gap: 5px;
+    width: 100%;
+    min-height: 50px;
+}
+
+.message-container:hover {
+    background-color: #22252a;
+}
+
+.user-img-message-container {
+    display: flex;
+    align-items: center;
+}
+
+.author-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+}
+
+.message-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.message-info-span {
+    color: white;
+}
+
+.author-name {
+    font-size: 15px;
+}
+
+.date {
+    font-size: 12px;
+    color: #ABABAD;
+}
+
+.message-text {
+    color: #D1D2D3;
+    font-size: 15px;
+}
+
+.no-messages-found-span {
+    color: #D1D2D3;
 }

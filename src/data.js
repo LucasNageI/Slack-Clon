@@ -24,15 +24,20 @@ export const MOOK = {
                             "author_img": "/pepe.webp",
                             "date": "20/07/24",
                             "text": "Buenas, este es el canal general, y es el primer mensaje"
+                        },
+                        {
+                            "id": 2,
+                            "author": "juan",
+                            "author_img": "/default-user-img.png",
+                            "date": "21/07/24",
+                            "text": "Buenas, este es el canal general?"
                         }
                     ]
                 },
                 {
                     "id": 2,
                     "name": "anounces",
-                    "messages": [
-                        {}
-                    ]
+                    "messages": []
                 }
             ]
         },
@@ -59,43 +64,23 @@ export const MOOK = {
                             "author_img": "/pepe.webp",
                             "date": "20/07/24",
                             "text": "re piola"
-                        },
-                        {
-                            "id": 3,
-                            "author": "pepe",
-                            "author_img": "/pepe.webp",
-                            "date": "20/07/24",
-                            "text": "que hago aca?"
-                        },
-                        {
-                            "id": 4,
-                            "author": "pepe",
-                            "author_img": "/pepe.webp",
-                            "date": "20/07/24",
-                            "text": "re piola"
                         }
                     ]
                 },
                 {
                     "id": 2,
                     "name": "important",
-                    "messages": [
-                        {}
-                    ]
+                    "messages": []
                 },
                 {
                     "id": 3,
                     "name": "announcements",
-                    "messages": [
-                        {}
-                    ]
+                    "messages": []
                 },
                 {
                     "id": 4,
                     "name": "to-do",
-                    "messages": [
-                        {}
-                    ]
+                    "messages": []
                 },
                 {
                     "id": 5,
@@ -113,23 +98,17 @@ export const MOOK = {
                 {
                     "id": 6,
                     "name": "suggestions",
-                    "messages": [
-                        {}
-                    ]
+                    "messages": []
                 },
                 {
                     "id": 7,
                     "name": "tasks",
-                    "messages": [
-                        {}
-                    ]
+                    "messages": []
                 },
                 {
                     "id": 8,
                     "name": "memes",
-                    "messages": [
-                        {}
-                    ]
+                    "messages": []
                 }
             ]
         }

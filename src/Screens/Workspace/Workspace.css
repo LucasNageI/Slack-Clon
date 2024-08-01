@@ -13,6 +13,7 @@
 }
 
 .channel-content-container {
+    height: calc(100vh - 40px);
     display: flex;
     border: 1px solid #3a3c41;
     border-radius: 10px;

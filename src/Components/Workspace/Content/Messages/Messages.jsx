@@ -1,14 +1,30 @@
-import React from 'react'
-import './Messages.css'
+import React from 'react';
+import './Messages.css';
 
-export const Messages = ( {channel} ) => {
+export const Messages = ({ messages_info }) => {
 
-    const messagesMap = (channel.messages).map(()=> {}) /* aca hacer el mapeo de los mensajes */
+    const messages_map = messages_info.map((message, index) => {
+        return (
+            <div className='message-container' key={index}> {/* index es el indice de los elementos por los que pasa el map */}
+                <div className='user-img-message-container'>
+                    <img className='author-img' src={message.author_img} alt="user image" />
+                </div>
+                <div className='message-info-container'>
+                    <div className='message-info'>
+                        <span className='message-info-span author-name'>{message.author}</span>
+                        <span className='message-info-span date'>{message.date}</span>
+                    </div>
+                    <div className='message-content'>
+                        <p className='message-text'>{message.text}</p>
+                    </div>
+                </div>
+            </div>
+        )
+    })
 
     return (
-    <div>
-        <span className='message'>{channel.name}</span>
-        {/* crear un componente nuevo para mandar mensajes */}
-    </div>
-  )
+        <>
+            {messages_map}
+        </>
+    )
 }

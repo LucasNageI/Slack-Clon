@@ -4,6 +4,7 @@
     background-color: #1a1d22;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .accessibility-info {
@@ -33,4 +34,26 @@
     width: 24px;
     height: 24px;
     border-radius: 5px;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.messages::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 12px;
+}
+
+.messages::-webkit-scrollbar-track {
+    background-color: #3a3c41;
+}
+
+.messages::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
 }
