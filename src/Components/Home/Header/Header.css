@@ -109,13 +109,15 @@
     .bi-list {
         display: flex;
         z-index: 20;
+        position: relative;
+        left: 20px;
     }
 
     .bi-x {
         display: flex;
         z-index: 20;
         position: relative;
-        left: 85vw;
+        left: 80vw;
         top: 3vh;
     }
 
@@ -138,6 +140,9 @@
 @media (max-width: 1200px) {
     .navbar-btn.close-ham-menu {
         left: 70vw;
+    }
+    .bi-list {
+        right: 20px;
     }
     .bi-x {
         left: 80vw;
@@ -165,6 +170,10 @@
 @media (max-width: 500px) {
     .navbar-btn.close-ham-menu {
         left: 50vw;
+    }
+    .bi-list {
+        right: 0px;
+        left: 30px;
     }
     .bi-x {
         left: 60vw;

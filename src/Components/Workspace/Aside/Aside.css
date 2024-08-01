@@ -1,4 +1,4 @@
-.accessibility {
+.aside {
     background-color: #151618;
     display: flex;
     flex-direction: column;
@@ -10,27 +10,28 @@
     overflow-y: scroll;
 }
 
-.accessibility::-webkit-scrollbar {
+.aside::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 4px;
 }
 
-.accessibility::-webkit-scrollbar-track {
+.aside::-webkit-scrollbar-track {
     background-color: #3a3c41;
 }
 
-.accessibility::-webkit-scrollbar-thumb {
+.aside::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 6px;
 }
 
-.accessibility-workspace-name-container {
+.aside-workspace-name-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
-.accessibility-workspace-name {
+.aside-workspace-name {
     color: white;
     font-weight: 800;
     font-size: 18px;
@@ -58,7 +59,7 @@
     justify-content: start;
 }
 
-.accessibility-create-channel {
+.aside-create-channel {
     display: flex;
     align-items: start;
     justify-items: center;
@@ -68,7 +69,7 @@
     cursor: pointer;
 }
 
-.accessibility-create-channel:hover {
+.aside-create-channel:hover {
     background-color: #27292b;
 }
 
@@ -139,19 +140,19 @@
 }
 
 @media (max-width: 1200px) {
-    .accessibility {
+    .aside {
         width: 25vw;
     }
 }
 
 @media (max-width: 800px) {
-    .accessibility-workspace-name {
+    .aside-workspace-name {
         font-size: 14px;
     }
     .channels-span-title {
         font-size: 12px;
     }
-    .accessibility {
+    .aside {
         width: 30vw;
         padding: 10px 10px;
     }
@@ -162,13 +163,13 @@
 
 
 @media (max-width: 500px) {
-    .accessibility-workspace-name {
+    .aside-workspace-name {
         font-size: 12px;
     }
     .channels-span-title {
         font-size: 10px;
     }
-    .accessibility {
+    .aside {
         width: 35vw;
         padding: 10px 2px;
     }   

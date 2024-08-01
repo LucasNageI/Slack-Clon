@@ -1,5 +1,5 @@
-import { Accessibility } from './Accessibility/Accessibility'
+import { Aside } from './Aside/Aside'
 import { Content } from './Content/Content'
 import { Header } from './Header/Header'
 
-export {Accessibility, Content, Header }
+export {Aside, Content, Header }

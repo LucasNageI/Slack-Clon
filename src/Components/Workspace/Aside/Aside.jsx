@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import "./Accessibility.css"
+import "./Aside.css"
 import { Channels } from './Channels/Channels'
 import { getMook, saveMook } from '../../../localStorageFns.js'
 
-export const Accessibility = ({ workspace_id }) => {
+export const Aside = ({ workspace_id }) => {
 
     const mook = getMook() /* obtiene el mook */
 
@@ -58,10 +58,10 @@ export const Accessibility = ({ workspace_id }) => {
     }
 
     return (
-        <section className='accessibility'>
-            <div className='accessibility-workspace-name-container'>
-                <button className='accessibility-workspace-name-btn'>
-                    <span className='accessibility-workspace-name'>{mook.workspaces[workspace_id - 1].name}</span>
+        <aside className='aside'>
+            <div className='aside-workspace-name-container'>
+                <button className='aside-workspace-name-btn'>
+                    <span className='aside-workspace-name'>{mook.workspaces[workspace_id - 1].name}</span>
                 </button>
             </div>
             <div className='channels-main-container'>
@@ -72,7 +72,7 @@ export const Accessibility = ({ workspace_id }) => {
                     <Channels channels={current_channels} />
                 </div>
                 <div className='create-new-channel-container'>
-                    <button className='accessibility-create-channel' onClick={handleNewChannel}>
+                    <button className='aside-create-channel' onClick={handleNewChannel}>
                         <span className='add-channels-span'><i className="bi bi-plus"></i> Add channels</span>
                     </button>
                     <form onSubmit={handleNewChannelForm} className={`channel-name-${is_setting_channel}`}>
@@ -83,6 +83,6 @@ export const Accessibility = ({ workspace_id }) => {
                     </form>
                 </div>
             </div>
-        </section>
+        </aside>
     )
 }
