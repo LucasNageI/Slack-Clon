@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import './Header.css';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react'
+import './Header.css'
+import { Link } from 'react-router-dom'
 
 export const Header = () => {
-    const [isOpen, setChange] = useState(false);
+    const [isOpen, setChange] = useState(false)
 
     const handleHamMenu = () => {
-        setChange(!isOpen);
-    };
+        setChange(!isOpen)
+    }
 
     return (
         <header className='header'>
@@ -35,5 +35,5 @@ export const Header = () => {
                 </div>
             </nav>
         </header>
-    );
+    )
 }

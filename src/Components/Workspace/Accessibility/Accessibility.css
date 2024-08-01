@@ -7,6 +7,27 @@
     border-right: 1px solid #3a3c41;
     padding: 10px 20px;
     gap: 10px;
+    overflow-y: scroll;
+}
+
+.accessibility::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 12px;
+}
+
+.accessibility::-webkit-scrollbar-track {
+    background-color: #3a3c41;
+}
+
+.accessibility::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+
+.accessibility-workspace-name-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .accessibility-workspace-name {
@@ -23,10 +44,10 @@
     gap: 5px;
 }
 
-.accessibility-workspace-name-container {
+.top-accessibility-btns {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 10px;
 }
 
 .bi-chat-text, .bi-send {
@@ -38,10 +59,12 @@
     color: #a1a3a4;
 }
 
-.top-accessibility-btns {
+.channels-main-container {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    margin: 0px 0px 30px 0px;
 }
 
 .channels-span-title {
@@ -54,21 +77,19 @@
     font-size: 15px;
 }
 
-.add-channels-span {
-    color: #a1a3a4;
+.channels-container {
+    width: 100%;
 }
 
-.channels-main-container {
+.create-new-channel-container {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    gap: 5px;
-    margin: 0px 0px 30px 0px;
+    justify-content: start;
 }
 
 .accessibility-create-channel {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-items: center;
     width: 100%;
     padding: 2px;
@@ -78,4 +99,68 @@
 
 .accessibility-create-channel:hover {
     background-color: #27292b;
+}
+
+.add-channels-span {
+    color: #a1a3a4;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.channel-name-true {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    margin-top: 20px;
+    background-color: #3a3c41;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.channel-name-false {
+    display: none;
+}
+
+.channel-name-label {
+    color: #a1a3a4;
+    font-size: 15px;
+}
+
+.channel-name-input {
+    width: 100%;
+    background: none;
+    border: none;
+    background-color: #151618;
+    padding: 5px;
+    color: #a1a3a4;
+    border-radius: 5px;
+}
+
+.channel-name-input:focus {
+    outline: none;
+}
+
+.submit-new-channel-btn {
+    background-color: #3a3c41;
+    padding: 5px;
+    border-radius: 5px;
+    color: #a1a3a4;
+    transition: all 0.5s ease-in-out;
+}
+
+.submit-new-channel-btn:hover {
+    outline: 1px solid white;
+}
+
+.channel-name-error-true {
+    display: flex;
+    color: red;
+    font-size: 14px;
+}
+
+.channel-name-error-false {
+    display: none;
 }
