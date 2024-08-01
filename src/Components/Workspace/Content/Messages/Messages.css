@@ -49,8 +49,24 @@
 .message-text {
     color: #D1D2D3;
     font-size: 15px;
+    word-break: break-all;
 }
 
 .no-messages-found-span {
     color: #D1D2D3;
+}
+
+@media (max-width: 800px) {
+    .author-img {
+        width: 30px;
+        height: 30px;
+    }
+    .date {
+        font-size: 10px;
+    }
+    .message-text {
+        color: #D1D2D3;
+        font-size: 12px;
+    }
+    
 }

@@ -5,7 +5,7 @@
     height: 100vh;
 }
 
-.Aside-Accessibility-Content-container {
+.Accessibility-Content-container {
     display: flex;
     width: 100%;
     background-color: #181b1e;
@@ -13,7 +13,7 @@
 }
 
 .channel-content-container {
-    height: calc(100vh - 40px);
+    height: calc(100vh - 60px);
     display: flex;
     border: 1px solid #3a3c41;
     border-radius: 10px;

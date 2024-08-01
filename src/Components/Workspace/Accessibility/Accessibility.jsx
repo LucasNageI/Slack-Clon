@@ -64,19 +64,9 @@ export const Accessibility = ({ workspace_id }) => {
                     <span className='accessibility-workspace-name'>{mook.workspaces[workspace_id - 1].name}</span>
                 </button>
             </div>
-            <div className='top-accessibility-btns-container'>
-                <button className='top-accessibility-btns'>
-                    <i className="bi bi-chat-text"></i>
-                    <span className='accessibility-btns-span'>Threads</span>
-                </button>
-                <button className='top-accessibility-btns'>
-                    <i className="bi bi-send"></i>
-                    <span className='accessibility-btns-span'>Drafts & sent</span>
-                </button>
-            </div>
             <div className='channels-main-container'>
                 <button>
-                    <span className='channels-span-title'><i className="bi bi-caret-down-fill"></i> Channels</span>
+                    <span className='channels-span-title'>Channels</span>
                 </button>
                 <div className='channels-container'>
                     <Channels channels={current_channels} />

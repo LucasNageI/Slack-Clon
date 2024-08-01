@@ -26,3 +26,21 @@
     padding: 5px;
     font-size: 15px;
 }
+
+@media (max-width: 800px) {
+    .channel-name-span {
+        font-size: 12px;
+    }
+    .bi-hash {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .channel-name-span {
+        font-size: 10px;
+    }
+    .bi-hash {
+        font-size: 12px;
+    }
+}

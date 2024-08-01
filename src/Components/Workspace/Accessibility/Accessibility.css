@@ -3,16 +3,16 @@
     display: flex;
     flex-direction: column;
     height: calc(100vh - 40px);
-    width: 15vw;
+    width: 20vw;
     border-right: 1px solid #3a3c41;
-    padding: 10px 20px;
+    padding: 10px 15px;
     gap: 10px;
     overflow-y: scroll;
 }
 
 .accessibility::-webkit-scrollbar {
     -webkit-appearance: none;
-    width: 12px;
+    width: 4px;
 }
 
 .accessibility::-webkit-scrollbar-track {
@@ -36,43 +36,14 @@
     font-size: 18px;
 }
 
-.top-accessibility-btns-container {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    margin: 30px 0px;
-    gap: 5px;
-}
-
-.top-accessibility-btns {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.bi-chat-text, .bi-send {
-    color: #a1a3a4;
-    font-size: 20px;
-}
-
-.accessibility-btns-span {
-    color: #a1a3a4;
-}
-
 .channels-main-container {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 5px;
-    margin: 0px 0px 30px 0px;
 }
 
 .channels-span-title {
-    color: #a1a3a4;
-    font-size: 15px;
-}
-
-.bi-caret-down-fill {
     color: #a1a3a4;
     font-size: 15px;
 }
@@ -137,6 +108,7 @@
     padding: 5px;
     color: #a1a3a4;
     border-radius: 5px;
+    font-size: 15px;
 }
 
 .channel-name-input:focus {
@@ -149,6 +121,7 @@
     border-radius: 5px;
     color: #a1a3a4;
     transition: all 0.5s ease-in-out;
+    border: 1px solid #a1a3a4;
 }
 
 .submit-new-channel-btn:hover {
@@ -158,9 +131,48 @@
 .channel-name-error-true {
     display: flex;
     color: red;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .channel-name-error-false {
     display: none;
+}
+
+@media (max-width: 1200px) {
+    .accessibility {
+        width: 25vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .accessibility-workspace-name {
+        font-size: 14px;
+    }
+    .channels-span-title {
+        font-size: 12px;
+    }
+    .accessibility {
+        width: 30vw;
+        padding: 10px 10px;
+    }
+    .channel-name-label, .channel-name-error-true, .channel-name-input {
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .accessibility-workspace-name {
+        font-size: 12px;
+    }
+    .channels-span-title {
+        font-size: 10px;
+    }
+    .accessibility {
+        width: 35vw;
+        padding: 10px 2px;
+    }   
+    .channel-name-label, .channel-name-error-true, .channel-name-input {
+        font-size: 10px;
+    }
 }

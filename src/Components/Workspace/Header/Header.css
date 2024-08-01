@@ -1,5 +1,5 @@
 .workspace-header {
-    height: 40px;
+    height: 60px;
     background-color: #181b1e;
     display: flex;
     align-items: center;
@@ -7,33 +7,79 @@
     padding: 0px 10px;
 }
 
-.workspace-search-btn {
+.header-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 8px;
-    height: 28px;
-    width: 40vw;
-    background-color: #5e5f61;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    color: white;
 }
 
-.workspace-btn-container {
-    position: relative;
-    left: 28vw;
+.header-nav-list {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
-.bi-arrow-left-short , .bi-arrow-right-short {
-    font-size: 20px;
-    color: #787a7e;
+.header-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-workspace-img {
+    width: 38px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.header-btn-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #181b1e;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    transition: 0.2s all ease-in-out;
+}
+
+.header-btn-list:hover {
+    background-color: #535557;
+    font-size: 22px;
+}
+
+.header-span {
+    color: white;
     cursor: default;
+    font-size: 11px;
+    font-weight: 800;
 }
 
-.bi-clock, .bi-search {
-    font-size: 16px;
+.header-btns {
+    transition: 0.1s all ease-in-out;
+    padding: 5px;
+    color: white;
+    font-size: 18px;
+}
+
+.header-btns:hover {
+    color: white;
+    font-size: 22px;
+    transition: 0.1s all ease-in-out;
+    padding: 5px;
+}
+
+.header-profile-img-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header-profile-img {
+    width: 38px;
+    border-radius: 8px;
+}
+
+.bi {
+    font-size: 18px;
 }
