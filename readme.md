@@ -13,3 +13,5 @@ Tuve varias complicaciones:
 # al usar el hook useEffect ya que durante las clases me saltee los ejercicios de practica y es fue primera experiencia usando este hook, me tuve que ver la clase donde se explico y buscar informacion extra para usarlo.
 
 # al hacer responsive la screen Home, hacer el menu desplegable para mostrar el nav del header me resulto muy complicado ya que nunca habia usado operadores ternarios para cambiar las clases de los elementos.
+
+# al hacer que se puedan mandar mensajes y que estos se guarden el el localStorage, me costo porque estaba comparando numbers con strings, los condicionales me devolvian false, y basicamente no se guardaban los mensajes, me costo bastante encontrar ese error.

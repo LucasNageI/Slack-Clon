@@ -5,7 +5,7 @@ import './Workspace.css'
 import { Route, Routes } from 'react-router-dom'
 
 export const Workspace = () => {
-    const { workspace_id } = useParams()
+    const { workspace_id } = useParams()  /* obtiene workspace_id de la URL (string) */
     return (
         <div className='workspace-page'>
             <Header workspace_id={workspace_id} />
@@ -14,8 +14,8 @@ export const Workspace = () => {
                 <div className='channel-content-container'>
                     <Accessibility workspace_id={workspace_id} />
                     <Routes>
-                        <Route element={<Content workspace_id={workspace_id} />} path="/Workspace/:workspace_id/*"></Route>
-                        <Route element={<Content workspace_id={workspace_id} />} path="/*"></Route>
+                        <Route element={<Content workspace_id={Number(workspace_id)} />} path="/Workspace/:workspace_id/*"></Route>
+                        <Route element={<Content workspace_id={Number(workspace_id)} />} path="/*"></Route>
                     </Routes>
                 </div>
             </div>

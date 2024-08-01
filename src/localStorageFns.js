@@ -21,7 +21,7 @@ export const getWorkspace = (workspace_id) => {
     if (!mook || !mook.workspaces) { /* si mook o mook.workspaces son falsy, los convierte a truthly y devuelve undefined para que tire error */
         return undefined
     }
-    const workspace_id_number = parseInt(workspace_id) /* convierte el parametro a number */
+    const workspace_id_number = Number(workspace_id) /* convierte el parametro a number */
     return mook.workspaces.find(workspace => workspace.id === workspace_id_number) /* y lo busca en el array de workspaces del mook */
 }
 
@@ -35,7 +35,7 @@ export const getChannel = (channel_id, workspace_id) => {
         return undefined
     }
 
-    const channel_id_number = parseInt(channel_id) /* convierte el parametro channel_id a number */
+    const channel_id_number = Number(channel_id) /* convierte el parametro channel_id a number */
 
     const channel = workspace.channels.find(channel => { /* y lo busca en el array de canales */
         return channel.id === channel_id_number

@@ -6,7 +6,7 @@ import { NewMessage } from './NewMessage/NewMessage.jsx';
 import { getChannel, getMook, saveMook } from '../../../localStorageFns.js';
 
 export const Content = ({ workspace_id }) => {
-    const { channel_id } = useParams()
+    const { channel_id } = useParams() /* obtiene channel_id de la URL (string) */
 
     const mook = getMook()
 
@@ -26,12 +26,12 @@ export const Content = ({ workspace_id }) => {
             id: current_messages.length + 1,
             author: mook.user_info.username,
             author_img: mook.user_info.profile_img,
-            date: 'now', /* intente poner la hora local, pero no supe como cambiar la hora que devolvia new Date().toISOString() */
+            date: new Date().toLocaleString(),
             text: text
         }
 
-        const updated_nessages = [...current_messages, new_message_object]
-        setCurrentMessages(updated_nessages)
+        const updated_messages = [...current_messages, new_message_object]
+        setCurrentMessages(updated_messages)
 
         const workspace = mook.workspaces.find((find_workspace) => {
             return find_workspace.id === workspace_id
@@ -39,11 +39,12 @@ export const Content = ({ workspace_id }) => {
 
         if (workspace) { /* si workspace es truthly: */
             const channel = workspace.channels.find((find_channel) => {
-                return find_channel.id === channel_id
+                return find_channel.id === Number(channel_id)
+
             })
 
             if (channel) { /* si channel es truthly: */
-                channel.messages = updated_nessages
+                channel.messages = updated_messages
                 saveMook(mook)
             }
         }
