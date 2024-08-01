@@ -57,13 +57,6 @@ export const MOOK = {
                             "author_img": "/pepe.webp",
                             "date": "20/07/24",
                             "text": "que hago aca?"
-                        },
-                        {
-                            "id": 2,
-                            "author": "pepe",
-                            "author_img": "/pepe.webp",
-                            "date": "20/07/24",
-                            "text": "re piola"
                         }
                     ]
                 },
@@ -85,15 +78,7 @@ export const MOOK = {
                 {
                     "id": 5,
                     "name": "questions",
-                    "messages": [
-                        {
-                            "id": 1,
-                            "author": "pepe",
-                            "author_img": "/pepe.webp",
-                            "date": "20/07/24",
-                            "text": "que hago aca?"
-                        }
-                    ]
+                    "messages": []
                 },
                 {
                     "id": 6,
