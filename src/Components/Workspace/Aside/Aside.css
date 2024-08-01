@@ -123,6 +123,7 @@
     color: #a1a3a4;
     transition: all 0.5s ease-in-out;
     border: 1px solid #a1a3a4;
+    margin-bottom: 50px;
 }
 
 .submit-new-channel-btn:hover {
