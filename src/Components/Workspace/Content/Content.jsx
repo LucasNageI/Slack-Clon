@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import './Content.css';
-import { Messages } from './Messages/Messages.jsx';
-import { NewMessage } from './NewMessage/NewMessage.jsx';
-import { getChannel, getMook, saveMook } from '../../../localStorageFns.js';
+import React, { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
+import './Content.css'
+import { Messages } from './Messages/Messages.jsx'
+import { NewMessage } from './NewMessage/NewMessage.jsx'
+import { getChannel, getMook, saveMook } from '../../../localStorageFns.js'
 
 export const Content = ({ workspace_id }) => {
     const { channel_id } = useParams() /* obtiene channel_id de la URL (string) */

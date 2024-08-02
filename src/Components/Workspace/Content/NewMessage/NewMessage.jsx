@@ -1,5 +1,5 @@
-import React from 'react';
-import './NewMessage.css';
+import React from 'react'
+import './NewMessage.css'
 
 export const NewMessage = ({ addNewMessage }) => {
 

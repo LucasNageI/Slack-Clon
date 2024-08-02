@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './Links.css';
+import React, { useState } from 'react'
+import './Links.css'
 
 const Dropdown = ({ title, items }) => {
     const [isOpen, setIsOpen] = useState(true)

@@ -5,7 +5,7 @@
     flex-direction: column;
 }
 
-.region-and-media-container {
+.reset-localStorage-refresh-media-container {
     width: 1200px;
     display: flex;
     justify-content: space-between;
@@ -14,13 +14,23 @@
     height: 10vh;
 }
 
-.region-btn-container {
+.reset-localStorage-refresh-container {
     margin: 100px 0;
+    display: flex;
+    gap: 20px;
 }
 
-.region-btn {
+.reset-localStorage-btn, .refresh-page-btn {
+    background-color: transparent;
     font-size: 16px;
     font-weight: 800;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.reset-localStorage-btn:hover, .refresh-page-btn:hover {
+    background-color: #58b6e4;
 }
 
 .social-media-container {
@@ -46,22 +56,6 @@
     justify-content: space-between;
 }
 
-.legal-section-ul {
-    display: flex;
-    gap: 10px;
-}
-
-.download-slack {
-    text-decoration: none;
-    color: #1674b7;
-}
-
-.legal-section-links {
-    text-decoration: none;
-    color: #757575;
-    font-size: 14px;
-}
-
 .p-copyright {
     color: #757575;
     font-size: 14px;
@@ -73,19 +67,19 @@
 }
 
 @media (max-width: 1350px) {
-    .region-and-media-container, .legal-section {
+    .reset-localStorage-refresh-media-container, .legal-section {
         width: 1000px;
     }
 }
 
 @media (max-width: 1200px) {
-    .region-and-media-container, .legal-section {
+    .reset-localStorage-refresh-media-container, .legal-section {
         width: 900px;
     }
 }
 
 @media (max-width: 1000px) {
-    .region-and-media-container, .legal-section {
+    .reset-localStorage-refresh-media-container, .legal-section {
         width: 700px;
     }
     .social-media-container {
@@ -94,22 +88,30 @@
 }
 
 @media (max-width: 800px) {
-    .region-and-media-container, .legal-section {
+    .reset-localStorage-refresh-media-container, .legal-section {
         width: 500px;
     }
 }
 
 @media (max-width: 500px) {
-    .region-and-media-container, .legal-section {
+    .reset-localStorage-refresh-media-container {
+        position: relative;
+        bottom: 50px;
+        width: 350px;
+        flex-direction: column;
+        height: 300px;
+    }
+    .legal-section {
         width: 350px;
     }
     .social-media-container {
         gap: 10px;
     }
+
 }
 
 @media (max-width: 350px) {
-    .region-and-media-container, .legal-section {
+    .reset-localStorage-refresh-media-container, .legal-section {
         width: 300px;
     }
 }

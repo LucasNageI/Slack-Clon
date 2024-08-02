@@ -1,15 +1,20 @@
-import React from 'react';
-import "./Footer.css";
-import { Links } from "./Links/Links.jsx";
+import React from 'react'
+import "./Footer.css"
+import { Links } from "./Links/Links.jsx"
 
 export const Footer = () => {
+    const handleResetLocalStorage = () => {
+        localStorage.clear()
+    }
+    const handleRefresh = () => {
+        window.location.reload()
+    }
     return (
         <footer className='footer'>
-            <div className='region-and-media-container'>
-                <div className='region-btn-container'>
-                    <button className='region-btn'>
-                        <i className="bi bi-globe"></i> Change Region
-                    </button>
+            <div className='reset-localStorage-refresh-media-container'>
+                <div className='reset-localStorage-refresh-container'>
+                    <button onClick={handleResetLocalStorage} className='reset-localStorage-btn'>Reset localStorage</button>
+                    <button onClick={handleRefresh} className='refresh-page-btn'>Refresh Page</button>
                 </div>
                 <div className='social-media-container'>
                     <a href="https://www.linkedin.com/company/tiny-spec-inc/" target="_blank">

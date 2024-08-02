@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
-import { Route, Routes } from 'react-router-dom';
-import { Home, CreateWorkspace, Workspace } from './Screens/index.js';
-import { MOOK } from './data.js';
-import { saveMook, getMook } from './localStorageFns.js';
+import React, { useEffect } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import { Home, CreateWorkspace, Workspace } from './Screens/index.js'
+import { MOOK } from './data.js'
+import { saveMook, getMook } from './localStorageFns.js'
 
 function App() {
     useEffect(() => {

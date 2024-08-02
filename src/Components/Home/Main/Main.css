@@ -149,6 +149,9 @@
 }
 
 @media (max-width: 1200px) {
+    .welcome-back-title {
+        font-size: 40px;
+    }
     .create-a-new-workspace-container {
         width: 800px;
     }
@@ -165,6 +168,9 @@
 
 
 @media (max-width: 1000px) {
+    .welcome-back-title {
+        font-size: 30px;
+    }
     .create-a-new-workspace-container {
         width: 700px;
     }
@@ -176,21 +182,15 @@
     }
     .span-btn-container {
         width: 700px;
+    }
+    .main-child, .welcome-back-container, .welcome-back-container, .create-a-new-workspace-container, .span-btn-container {
+        width: 400px;
     }
 }
 
 @media (max-width: 800px) {
-    .create-a-new-workspace-container {
-        width: 500px;
-    }
-    .main-child {
-        width: 500px;
-    }
-    .welcome-back-container {
-        width: 500px;
-    }
-    .span-btn-container {
-        width: 500px;
+    .main-child, .welcome-back-container, .welcome-back-container, .create-a-new-workspace-container, .span-btn-container {
+        width: 400px;
     }
     .create-new-workspace {
         flex-direction: column;
@@ -207,7 +207,7 @@
 
 @media (max-width: 500px) {
     .create-a-new-workspace-container {
-        width: 350px;
+        width: 300px;
         flex-direction: column;
         align-items: start;
         justify-content: space-between;
@@ -224,30 +224,14 @@
     .change-email-span, .change-email-link {
         font-size: 13px;
     }
-    .main-child {
-        width: 350px;
-    }
-    .welcome-back-container {
-        width: 350px;
-    }
-
-    .span-btn-container {
-        width: 350px;
+    .main-child, .welcome-back-container, .welcome-back-container, .span-btn-container {
+        width: 300px;
     }
 }
 
 @media (max-width: 350px) {
-    .create-a-new-workspace-container {
-        width: 300px;
-    }
-    .main-child {
-        width: 300px;
-    }
-    .welcome-back-container {
-        width: 300px;
-    }
-    .span-btn-container {
-        width: 300px;
+    .main-child, .welcome-back-container, .welcome-back-container, .create-a-new-workspace-container, .span-btn-container {
+        width: 250px;
     }
     .want-to-switch-team-span {
         font-size: 11px;

@@ -1,5 +1,5 @@
-import React from 'react';
-import './Messages.css';
+import React from 'react'
+import './Messages.css'
 
 export const Messages = ({ messages_info }) => {
 
