@@ -73,7 +73,11 @@ export const Aside = ({ workspace_id }) => {
                 </div>
                 <div className='create-new-channel-container'>
                     <button className='aside-create-channel' onClick={handleNewChannel}>
-                        <span className='add-channels-span'><i className="bi bi-plus"></i> Add channels</span>
+                        <span className='add-channels-span'>
+                            <i className="bi bi-plus"></i>
+                            Add channels 
+                            <i className={`${is_setting_channel ? 'bi bi-caret-up-fill' : 'bi bi-caret-down-fill'}`}></i>
+                        </span>
                     </button>
                     <form onSubmit={handleNewChannelForm} className={`channel-name-${is_setting_channel}`}>
                         <label className='channel-name-label' htmlFor="channel_name">Channel name may have between 2 and 15 characters.</label>
@@ -85,4 +89,5 @@ export const Aside = ({ workspace_id }) => {
             </div>
         </aside>
     )
+   /*  <i className={`section-titles-icon ${isOpen ? 'bi bi-chevron-down' : 'bi bi-chevron-up'}`}></i> */
 }
