@@ -16,4 +16,4 @@ No use otras librerias mas que las obligatorias 'react-router-dom' y 'react'.
 
 Me encanto hacer el proyecto, hay un par de cosas que le cambiaria, por ejemplo los nombres de las clases de los elementos, siento que son poco intuitivos, pero en general, conforme.
 
-Hay un par de botones que no tienen funcionalidad, como los del header, pero los puse para rellenar ese espacio vacio, y para hacer el menu desplegable para mobile.
+Hay un par de botones que no tienen funcionalidad, como los del header, pero los puse para rellenar ese espacio vacio, y para hacer el menu desplegable para mobile.ñ

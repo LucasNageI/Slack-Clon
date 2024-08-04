@@ -13,7 +13,7 @@ export const FormWorkspace = () => {
 
     const handleWorkspaceForm = (e) => {
         e.preventDefault()
-        let workspace_name = e.target['workspace_name'].value
+        let workspace_name = e.target['workspace_name'].value.trim() 
 
         if (workspace_name.length > 30 || workspace_name.length < 4) { /* minimo 4 y maximo 30 caracteres */
             setErrorWorkspace("Workspace name may have between 4 and 30 characters.")

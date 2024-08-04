@@ -171,24 +171,6 @@
     .welcome-back-title {
         font-size: 30px;
     }
-    .create-a-new-workspace-container {
-        width: 700px;
-    }
-    .main-child {
-        width: 700px;
-    }
-    .welcome-back-container {
-        width: 700px;
-    }
-    .span-btn-container {
-        width: 700px;
-    }
-    .main-child, .welcome-back-container, .welcome-back-container, .create-a-new-workspace-container, .span-btn-container {
-        width: 400px;
-    }
-}
-
-@media (max-width: 800px) {
     .main-child, .welcome-back-container, .welcome-back-container, .create-a-new-workspace-container, .span-btn-container {
         width: 400px;
     }
@@ -203,11 +185,7 @@
         height: 60px;
         font-size: 10px;
     }
-}
-
-@media (max-width: 500px) {
     .create-a-new-workspace-container {
-        width: 300px;
         flex-direction: column;
         align-items: start;
         justify-content: space-between;
@@ -221,10 +199,21 @@
     .want-to-switch-team-span {
         font-size: 13px;
     }  
+}
+
+@media (max-width: 800px) {
+    .main-child, .welcome-back-container, .welcome-back-container, .create-a-new-workspace-container, .span-btn-container {
+        width: 400px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
     .change-email-span, .change-email-link {
         font-size: 13px;
     }
-    .main-child, .welcome-back-container, .welcome-back-container, .span-btn-container {
+    .main-child, .welcome-back-container, .welcome-back-container, .create-a-new-workspace-container, .span-btn-container {
         width: 300px;
     }
 }

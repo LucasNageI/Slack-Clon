@@ -35,7 +35,7 @@
     background-origin: #4f1852;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .workspace {
         flex-direction: column;
         gap: 30px;
