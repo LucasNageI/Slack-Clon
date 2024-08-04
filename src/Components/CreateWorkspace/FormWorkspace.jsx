@@ -12,6 +12,7 @@ export const FormWorkspace = () => {
     const [current_workspaces, setCurrentWorkspaces] = useState(workspaces) /* useState para subir el workspace al localStorage */
 
     const handleWorkspaceForm = (e) => {
+        e.preventDefault()
         let workspace_name = e.target['workspace_name'].value.trim() 
 
         if (workspace_name.length > 30 || workspace_name.length < 4) { /* minimo 4 y maximo 30 caracteres */
