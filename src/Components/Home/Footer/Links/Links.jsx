@@ -2,17 +2,17 @@ import React, { useState } from 'react'
 import './Links.css'
 
 const Dropdown = ({ title, items }) => {
-    const [isOpen, setIsOpen] = useState(true)
+    const [is_open, setIs_open] = useState(true)
 
     const toggleDropdown = () => {
-        setIsOpen(!isOpen)
+        setIs_open(!is_open)
     }
 
     return (
-        <div className={`dropdown ${isOpen ? 'open' : ''}`}>
+        <div className={`dropdown ${is_open ? 'open' : ''}`}>
             <button className='dropdown-button' onClick={toggleDropdown}>
                 {title}
-                <i className={`section-titles-icon ${isOpen ? 'bi bi-chevron-down' : 'bi bi-chevron-up'}`}></i>
+                <i className={`section-titles-icon ${is_open ? 'bi bi-chevron-down' : 'bi bi-chevron-up'}`}></i>
             </button>
             <ul className='dropdown-menu'>
                 {items.map((item, index) => (
